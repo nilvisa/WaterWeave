@@ -14,8 +14,16 @@ foreach($user as $user)
 		print '<h2>'.$user['f_name'].' '.$user['l_name'].'</h2>';
 		print '('.$user['title'].')<br><br>';
 		print '<p>'.$user['story'].'</p><br><br>';
-		print '<i>kontakt: '.$user['email'].'/'.$user['tel'].'</i><br><br><br>';
+		print '<i>kontakt: '.$user['email'].'/'.$user['tel'].'</i><br><br><br><br><br>';
 
 	print '</div>';
 
 }
+
+?>
+
+<html>
+	<head>
+		<link href="css/temp_style.css" rel="stylesheet" type="text/css">
+	</head>
+</html>

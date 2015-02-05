@@ -8,10 +8,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	{
 		addPerson();
 	}
+	if(isset($_POST['updatePerson']))
+	{
+		updatePerson();
+	}
+
 ?>
 
 <html>
-<head><meta charset="utf-8"></head>
+<head>
+	<meta charset="utf-8">
+	<link href="css/temp_style.css" rel="stylesheet" type="text/css">
+</head>
+
 
 	<form method="post" enctype="multipart/form-data">
 		<input type="text" name="f_name" placeholder="Förnamn"><br>
@@ -38,11 +47,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	{
 		foreach($user as $user)
 		{
-			updatePerson($user['user_id']);
-
 			print '<div class="edit">';
 			print '<h2>Redigera '.$user['f_name'].'</h2>';
 			print '<form method="post" enctype="multipart/form-data" action="adduser.php">';
+			print '<input type="hidden" name="user_id" value="'.$user['user_id'].'">';
 			print '<input type="text" name="f_name" value="'.$user['f_name'].'"><br>';
 			print '<input type="text" name="l_name" value="'.$user['l_name'].'"><br>';
 			print '<input type="text" name="email" value="'.$user['email'].'"><br>';
@@ -57,8 +65,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 				print '<input type="file" name="user_pic"> <img src="img/pers/profile.png" width="100px"><br>';
 			}
 			
-			print '<input type="submit" name="'.$user['user_id'].'" value="Ändra">';
-			print '</form></div>';
+			print '<input type="submit" name="updatePerson" value="Ändra">';
+			print '</form><br><br></div>';
 
 		}
 	}

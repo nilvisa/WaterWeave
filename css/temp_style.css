@@ -1,0 +1,11 @@
+.news{
+	width: 400px;
+	margin: 20px;
+}
+
+.edit{
+	width: 400px;
+	float: left;
+	background: #eee;
+	margin: 10px;
+}
