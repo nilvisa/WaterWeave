@@ -8,11 +8,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	{
 		addPerson();
 	}
-	if(isset($_POST['updatePerson']))
+	if(isset($_POST['delete']))
 	{
-		updatePerson();
+		delete('waterweave.users', 'user_id', 'f_name');
 	}
-
+	if(isset($_POST['add']))
+	{
+		movePlace('add');
+	}
+	if(isset($_POST['sub']))
+	{
+		movePlace('sub');
+	}
 ?>
 
 <html>
@@ -47,26 +54,40 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	{
 		foreach($user as $user)
 		{
-			print '<div class="edit">';
-			print '<h2>Redigera '.$user['f_name'].'</h2>';
-			print '<form method="post" enctype="multipart/form-data" action="adduser.php">';
-			print '<input type="hidden" name="user_id" value="'.$user['user_id'].'">';
-			print '<input type="text" name="f_name" value="'.$user['f_name'].'"><br>';
-			print '<input type="text" name="l_name" value="'.$user['l_name'].'"><br>';
-			print '<input type="text" name="email" value="'.$user['email'].'"><br>';
-			print '<input type="text" name="tel" value="'.$user['tel'].'"><br>';
-			print '<input type="text" name="title" value="'.$user['title'].'"><br>';
-			print '<textarea name="story" rows="5" cols="22">'.$user['story'].'</textarea><br>';
+			print '
+			<div class="edit">
+				<div class="delete">
+					<form method="post">
+						<input type="hidden" name="id" value="'.$user['user_id'].'">
+						<input type="hidden" name="name" value="'.$user['f_name'].'">
+						<input type="submit" name="add" value="Flytta Upp">
+						<input type="submit" name="sub" value="Flytta Ner">
+						<input type="submit" name="delete" value="Radera">
+					</form>
+				</div>
 
-			if($user['user_pic']){
-				print '<input type="file" name="user_pic"> <img src="img/pers/'.$user['user_pic'].'" width="100px"><br>';
-			}
-			else{
-				print '<input type="file" name="user_pic"> <img src="img/pers/profile.png" width="100px"><br>';
-			}
-			
-			print '<input type="submit" name="updatePerson" value="Ändra">';
-			print '</form><br><br></div>';
+				<h2>Redigera '.$user['f_name'].'</h2>
+
+				<form method="post" enctype="multipart/form-data" action="adduser.php">
+					<input type="hidden" name="update" value="update">
+					<input type="hidden" name="user_id" value="'.$user['user_id'].'">
+					<input type="text" name="f_name" value="'.$user['f_name'].'"><br>
+					<input type="text" name="l_name" value="'.$user['l_name'].'"><br>
+					<input type="text" name="email" value="'.$user['email'].'"><br>
+					<input type="text" name="tel" value="'.$user['tel'].'"><br>
+					<input type="text" name="title" value="'.$user['title'].'"><br>
+					<textarea name="story" rows="5" cols="22">'.$user['story'].'</textarea><br>';
+
+					if($user['user_pic']){
+						print '<input type="file" name="user_pic"> <img src="img/pers/'.$user['user_pic'].'" width="100px"><br>';
+					}
+					else{
+						print '<input type="file" name="user_pic"> <img src="img/pers/profile.png" width="100px"><br>';
+					}
+					
+					print '<input type="submit" name="addPerson" value="Ändra">
+				</form>
+			</div>';
 
 		}
 	}
