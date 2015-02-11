@@ -20,6 +20,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 <head>
 	<meta charset="utf-8">
 	<link href="css/temp_style.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 </head>
 
 	<form method="post" enctype="multipart/form-data">
@@ -53,11 +55,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 						<input type="hidden" name="name" value="'.$news['news_title'].'">
 						<input type="submit" name="delete" value="Radera">
 					</form>
-				</div>
+				</div>';
 
-				<h2>Redigera "'.$news['news_title'].'"</h2>
+				print mb_strtolower('<h2>Redigera "'.$news['news_title'].'"</h2>', 'UTF-8');
 
-				<form method="post" enctype="multipart/form-data">
+				print'<form method="post" enctype="multipart/form-data">
 					<input type="hidden" name="update" value="update">
 					<input type="hidden" name="news_id" value="'.$news['news_id'].'">
 					<input type="text" name="news_title" value="'.$news['news_title'].'"><br>

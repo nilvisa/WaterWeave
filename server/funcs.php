@@ -97,10 +97,19 @@ function movePlace($move)
 {
 	if(isset($_POST['$move']))
 	{
+		$user_id = $_POST['user_id'];
+
 		if($move == 'add')
 		{
+			$curPlace = dbRow("SELECT FROM waterweave.users
+				SELECT place WHERE user_id = $user_id");
+
+			$place = $curPlace+1;
+
 			dbAdd("UPDATE waterweave.users
-				SET place = 'SUM(place+1)'")
+				SET place = $place WHERE user_id = $user_id");
+
+			print $user_id . $place;
 		}
 	}
 }
@@ -214,6 +223,8 @@ function delete($table, $col_id, $col_name)
 		print 'Du har tagit bort "'.$name.'"';
 	}
 }
+
+
 
 
 
