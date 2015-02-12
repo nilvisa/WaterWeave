@@ -4,8 +4,6 @@
 
 
 
-<div id="border"></div>
-
 
 <img src="img/head/1_h.png" id="imgflow">
 <div id="pil">
