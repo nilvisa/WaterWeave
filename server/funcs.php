@@ -90,7 +90,7 @@ function getAll()
 function getPerson($id)
 {
 	return dbRow("SELECT * FROM waterweave.users
-		WHERE use_id = '$id'");
+		WHERE user_id = '$id'");
 }
 
 function movePlace($move)

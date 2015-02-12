@@ -54,8 +54,8 @@ foreach($news as $news)
 		}
 
 		print '</div>';
-		print '<div class="arrow-down"></div>';		 
-
+		print '<div class="arrow-down"></div>';
+		
 		if(strlen($news['news']) > 130)
 		{
 			$sumNews = substr($news['news'], 0, 130).'...';

@@ -1,22 +1,32 @@
+<?php
 
+$sandra = getPerson('13');
+$maria = getPerson('12');
 
+?>
 
+<html>
 <div id="footer">
 	<div id="footermain">
-		<div id="footerleft">
-			WaterWeave</br>
+		
+		<div class="footertext">
+			<p>WaterWeave</br>
 			Vera Sandbergsallé 8</br>
-			412 96 Göteborg
+			412 96 Göteborg</p>
 		</div>
-		<div id="footermiddle">
-			© Copyright 2015
+
+		<div class="footertext">
+			<p>© Copyright 2015</p>
 		</div>
-		<div id="footerright">
-			Sandra Melin</br>
-			070-269 58 53</br>
+
+		<div class="footertext">
+			<p>Sandra Melin</br>
+			<?php print $sandra['tel']; ?> <br>
+
 			Maria Knutsson</br>
-			076-226 14 47
+			<?php print $maria['tel']; ?></p>
 		</div>
+
 	</div>
 </div>
 <div id="tempbottom">
