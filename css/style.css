@@ -83,10 +83,11 @@ nav li a {
 
 #headerimg{
 	width: 100%;
+	height: 219px;
+	overflow: hidden;
 }
-	#headerimg img{
+	#headerimg img{ 
 		width: 100%;
-		height: 220px;
 	}
 
 
@@ -192,12 +193,6 @@ p.readmore {
 
 /*Lovisas CSS*/
 
-#hej {
-	width: 724px;
-	background: #ccc;
-	margin: 0 auto;
-}
-
 .team {
 	width: 290px;
 	margin: 0 0 48px 48px;
@@ -244,7 +239,7 @@ p.readmore {
 
 #nyhet {
 	width: 628px;
-	margin: 0 auto;
+	margin: 0px auto;
 	text-align: center;
 }
 	#nyhet img{
