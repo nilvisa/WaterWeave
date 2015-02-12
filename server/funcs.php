@@ -119,10 +119,10 @@ function addNews()
 {
 	if(isset($_POST['addNews']))
 	{
-		$news_title = filter_var($_POST['news_title'], FILTER_SANITIZE_SPECIAL_CHARS);
-		$news = filter_var($_POST['news'], FILTER_SANITIZE_SPECIAL_CHARS);
-		$eng_sum = filter_var($_POST['eng_sum'], FILTER_SANITIZE_SPECIAL_CHARS);
-		$news_date = filter_var($_POST['news_date'], FILTER_SANITIZE_SPECIAL_CHARS);
+		$news_title = $_POST['news_title'];
+		$news = $_POST['news'];
+		$eng_sum = $_POST['eng_sum'];
+		$news_date = $_POST['news_date'];
 		$img = $_FILES['news_pic'];
 		$pic_name = $img['name'];
 		$pic = checkIMG($img, 'news');
