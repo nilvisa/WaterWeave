@@ -103,7 +103,7 @@ nav li a {
 
 #headerimg {
 	width: 100%;
-	height: 219px;
+	height: 200px;
 	margin: 100px 0 15px 0;
 	overflow: hidden;
 }
@@ -127,6 +127,9 @@ nav li a {
 	margin: 0 auto;
 	text-align: center;
 }
+	#main h1 {
+		margin-bottom: 35px;
+	}
 
 
 #waterweave {
@@ -347,6 +350,10 @@ p.readmore {
 		padding: 0px;
 	}
 
+	#nyhet h1{
+		color: #666;
+	}
+
 #container {
 	width: 724px;
 	margin: 0 auto;
@@ -360,7 +367,7 @@ p.readmore {
 	.item a {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 18px;
-		line-height: 18px;
+		line-height: 14px;
 		font-variant: small-caps;
 		color: #33ccff;
 		text-decoration: none;

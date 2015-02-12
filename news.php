@@ -10,6 +10,9 @@ print '<div id="headerimg"><img src="img/head/5_h.png"></div>';
 
 <html>
 	<div id="main">
+
+	<h1>nyheter</h1>
+
 	<div id="nyhet">
 
 		<?php		
@@ -53,9 +56,9 @@ foreach($news as $news)
 		print '</div>';
 		print '<div class="arrow-down"></div>';		 
 
-		if(strlen($news['news']) > 100)
+		if(strlen($news['news']) > 130)
 		{
-			$sumNews = substr($news['news'], 0, 100).'...';
+			$sumNews = substr($news['news'], 0, 130).'...';
 			print '<p>'.$sumNews.' <a href="news.php?news='.$news['news_id'].'">läs mer</a></p>';
 		}
 		else
