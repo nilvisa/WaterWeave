@@ -9,9 +9,9 @@ print '<div id="headerimg"><img src="img/head/5_h.png"></div>';
 
 
 <html>
-<br><br><br>
-	
+	<div id="main">
 	<div id="nyhet">
+
 		<?php		
 		if(isset($_GET['news']))
 		{
@@ -74,7 +74,7 @@ foreach($news as $news)
 
 
 
-print '</div></body></html>';
+print '</div></div></body></html>';
 
 include('footer.php');
 

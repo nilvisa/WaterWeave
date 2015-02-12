@@ -34,9 +34,10 @@
 			</ul>
 		</nav>
 	</div>
+	<div id="border"></div>
 </div>
 
-<div id="border"></div>
+
 
 
 
