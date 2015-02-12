@@ -3,7 +3,10 @@
 include('header.php');
 
 $news = getAllNews();
+
+print '<div id="headerimg"><img src="img/head/5_h.png"></div>';
 ?>
+
 
 <html>
 <br><br><br>

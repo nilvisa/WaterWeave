@@ -12,8 +12,8 @@
 	<title>WaterWeave</title>
 	<!--<link href="css/reset.css" type="text/css" rel="stylesheet" />-->
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -28,8 +28,8 @@
 			<ul>
 				<li><a href="#">waterweave</a></li>
 				<li><a href="#">tekniken</a></li>
-				<li><a href="#">teamet</a></li>
-				<li><a href="#">nyheter</a></li>
+				<li><a href="team.php">teamet</a></li>
+				<li><a href="news.php">nyheter</a></li>
 				<li><a href="#">kontakt</a></li>
 			</ul>
 		</nav>

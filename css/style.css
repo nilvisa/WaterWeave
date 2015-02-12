@@ -4,6 +4,17 @@ body {
 }
 
 
+h1{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 30px;
+	font-variant: small-caps;
+	color: #33ccff;
+	text-align: center;
+}
+
+
 a {
 		text-decoration: none;
 }
@@ -69,6 +80,16 @@ nav li a {
 
 
 
+#headerimg{
+	width: 100%;
+	height: 219px;
+	overflow: hidden;
+}
+	#headerimg img{ 
+		width: 100%;
+	}
+
+
 
 
 #imgflow {
@@ -83,25 +104,12 @@ nav li a {
 
 
 #main {
-	margin-left: auto ;
-	margin-right: auto ;
+	margin-left: auto;
+	margin-right: auto;
 	
 	max-width: 724px;
-	height:auto;
 	text-align: center;
 }
-/*
-#main p {
-	color:#666666;
-	font-family: 'Vollkorn', serif;
-}
-
-#main h1 {
-	color:#33ccff;
-	font-family: 'open sans', sans-serif;
-
-}
-*/
 
 
 #waterweave {
@@ -259,7 +267,43 @@ p.readmore {
 
 /*Lovisas CSS*/
 
-.edit{
+.team {
+	width: 290px;
+	margin: 0 0 48px 48px;
+	float: left;
+}
+	.team img {
+		width: 170px;
+		margin: 0 auto 35px auto;
+		padding: 0px;
+	}
+	.team h2 {
+		color: #666;
+		margin: 0px;
+		padding: 0px;
+	}
+	.team h3 {
+		font-family: 'Vollkorn', serif;
+		font-size: 18px;
+		line-height: 18px;
+		font-style: italic;
+		font-weight: 400;
+		color: #666;
+		text-align: center;
+		margin: 3px;
+	}
+	.team p {
+		font-family: 'Vollkorn', serif;
+		font-size: 15px;
+		line-height: 18px;
+		color: #666;
+		text-align: left;
+		padding: 14px;
+		margin: 0px;
+	}
+
+
+.edit {
 	width: 400px;
 	height: 450px;
 	float: left;
@@ -267,9 +311,9 @@ p.readmore {
 	margin: 10px;
 }
 
-#nyhet{
+#nyhet {
 	width: 628px;
-	margin: 0 auto;
+	margin: 0px auto;
 	text-align: center;
 }
 	#nyhet img{
@@ -279,17 +323,17 @@ p.readmore {
 		padding: 0px;
 	}
 
-#container{
+#container {
 	width: 724px;
 	margin: 0 auto;
 }
 
-.item{ 
+.item { 
 	width: 290px;
 	margin: 0 0 0 48px;
 	text-align: center;
 }
-	.item a{
+	.item a {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 18px;
 		line-height: 18px;
@@ -298,11 +342,11 @@ p.readmore {
 		text-decoration: none;
 
 	}
-	.item a:hover{
+	.item a:hover {
 		color: #666;
 	}
 
-.blue_bar{
+.blue_bar {
 	width: 100%;
 	height: 12px;
 	background: #5e6062;
@@ -330,7 +374,7 @@ p.readmore {
   background-color:#fff;
   opacity: 1;
 }
-.wrap:hover{
+.wrap:hover {
 	opacity: 0.8;
 	/*ny hover-funktion*/
 }
