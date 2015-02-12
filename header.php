@@ -1,6 +1,6 @@
 
 
-<?php //include("server/functions.php"); ?>
+<?php include("server/funcs.php"); ?>
 
 
 
@@ -35,4 +35,8 @@
 		</nav>
 	</div>
 </div>
+
+<div id="border"></div>
+
+
 
