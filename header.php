@@ -1,6 +1,8 @@
 
 
-<?php require_once("server/funcs.php"); ?>
+<?php //include("server/functions.php"); ?>
+
+
 
 
 <!DOCTYPE html>
@@ -20,7 +22,7 @@
 <div id="header">
 	<div id="headermain">
 		<a href="#">
-			<img src="img/logo.jpg" id="logga">
+			<img src="img/head/logotyp_vector.png" id="logga">
 		</a>
 		<nav>
 			<ul>
@@ -33,6 +35,4 @@
 		</nav>
 	</div>
 </div>
-
-<div id="border"></div>
 

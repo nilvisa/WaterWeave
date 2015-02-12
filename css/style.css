@@ -1,39 +1,21 @@
-body{
-	font-family: 'Vollkorn', serif;
-	padding: 0px;
-	margin: 0px;
-}
-
-h1{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-	font-size: 44px;
-	line-height: 18px;
-	font-variant: small-caps;
-	color: #33ccff;
-	text-align: center;
-}
-
-h2{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	line-height: 18px;
-	font-variant: small-caps;
-	color: #33ccff;
-	text-align: center;
-}
-
-p{
-	font-family: 'Vollkorn', serif;
-	font-size: 18px;
-	line-height: 18px;
-	color: #666;
+/*generella regler*/
+body {
+	margin:0px;
 }
 
 
+a {
+		text-decoration: none;
+}
+
+
+
+/*headern, duh*/
 #header {
 	width:100%;
 	height:100px;
+	position:fixed;
+	background-color:white;
 }
 
 #headermain {
@@ -47,6 +29,7 @@ p{
 #logga {
 	width:140px;
 	float:left;
+	margin-top:11px;
 }
 
 nav {
@@ -68,15 +51,20 @@ nav li {
 nav li a {
 	text-decoration : none;
 	color:#666666;
-    font-family: 'open sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: bold;
-    font-size: 14px;
+    font-variant: small-caps;
+    font-size: 16px;
 }
 
+
+/*sidan börjar*/
 #border {
 	background-color:#666666;
 	width:100%;
 	height:10px;
+	position:fixed;
+	margin-top:100px;
 }
 
 
@@ -85,7 +73,12 @@ nav li a {
 
 #imgflow {
 	width : 100%;
-	height : 500px;
+	height : 455px;
+	margin-top:110px;
+}
+
+#pil {
+	height:20px;
 }
 
 
@@ -97,7 +90,7 @@ nav li a {
 	height:auto;
 	text-align: center;
 }
-
+/*
 #main p {
 	color:#666666;
 	font-family: 'Vollkorn', serif;
@@ -108,7 +101,7 @@ nav li a {
 	font-family: 'open sans', sans-serif;
 
 }
-
+*/
 
 
 #waterweave {
@@ -127,18 +120,49 @@ nav li a {
 
 }
 
+#vision h1 {
+	color:#33ccff;
+	font-family: "open sans", sans-serif;
+	font-variant: small-caps;
+	font-size: 33px;
+}
+
+#vision p {
+	color:#666666;
+	font-family: "Volkorn", serif;
+	margin-left: 30px ;
+	margin-right: 30px ;
+	font-size: 26px;
+}
+
+
+div.coltext h1 {
+	color:#33ccff;
+	font-family: 'open sans', sans-serif;
+	font-size: 15px;
+}
+
+div.coltext p {
+	color:#666666;
+	font-family: 'Vollkorn', serif;
+	margin-left: 48px ;
+	margin-right: 48px ;
+	font-size: 15px;
+}
 
 
 
 .coltext {
 	width:100%;
-	height:150px;
+	height:120px;
 }
 
 p.readmore {
 	color:#ffffff;
-	text-decoration: none;
+	/*margin-top:70px;*/
 }
+
+
 
 .button {
 	width:100px;
@@ -150,12 +174,13 @@ p.readmore {
 	margin-bottom: 50px;
 }
 
+
+/*footern*/
 #footer {
 	width:100%;
-	height:100px;
+	height:110px;
 	background-color:#666666;
 	text-align: center;
-	margin-top: 50px;
 }
 
 #footermain {
@@ -168,20 +193,38 @@ p.readmore {
 	color:#ffffff;
 }
 
-.footercol {
-	margin-top:10px;
+#footerleft {
+	margin-top:20px;
 	width:181px;
 	float:left;
 }
 
+#footermiddle {
+	margin-top:33px;
 
+	width:181px;
+	float:left;
+}
+
+#footerright {
+	margin-top:20px;
+	width:181px;
+	float:left;
+}
+
+#tempbottom {
+	height:500px;
+}
+
+
+/*hacks*/
 .clearfix {
 	clear : both;
 }
 
 
 
-
+/*den responsiva delen*/
 @media screen and (max-width: 740px) 	{
 #waterweave {
 	width: 100%;
@@ -189,7 +232,27 @@ p.readmore {
 #tekniken {
 	width: 100%;
 }
+
+#footerleft, #footerright {
+	display:none;
 }
+
+#footermain {
+	width:181px;
+}
+
+#footer {
+	height:50px;
+}
+
+#footermiddle {
+	margin-top:15px;
+}
+
+
+
+}
+
 
 
 
