@@ -26,8 +26,8 @@
 			<ul>
 				<li><a href="#">waterweave</a></li>
 				<li><a href="#">tekniken</a></li>
-				<li><a href="#">teamet</a></li>
-				<li><a href="#">nyheter</a></li>
+				<li><a href="team.php">teamet</a></li>
+				<li><a href="news.php">nyheter</a></li>
 				<li><a href="#">kontakt</a></li>
 			</ul>
 		</nav>
