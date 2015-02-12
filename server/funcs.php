@@ -84,7 +84,7 @@ function addPerson()
 function getAll()
 {
 	return dbArray("SELECT * FROM waterweave.users
-		ORDER BY place");
+		ORDER BY user_id DESC");
 }
 
 function getPerson($id)

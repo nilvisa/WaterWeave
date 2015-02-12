@@ -1,29 +1,39 @@
 <?php
 
-require_once('server/funcs.php');
+include('header.php');
 
 $user = getAll();
+print '<div id="headerimg"><img src="img/head/4_h.png"></div>';
+
+print '<div id="main">';
+
+print '<h1>teamet</h1>';
 
 foreach($user as $user)
 {
-	print '<div class="pers">';
+	print '<div class="team">';
 
-		if($user['user_pic']) print '<img src="img/pers/'.$user['user_pic'].'" width="200px" align="left">';
-		else print '<img src="img/pers/profile.png" width="200px" align="left">';
+		if($user['user_pic'])
+		{
+			print '<img src="img/pers/'.$user['user_pic'].'">';
+		}
+		else 
+		{
+			print '<img src="img/pers/profile.png">';
+		}
 
-		print '<h2>'.$user['f_name'].' '.$user['l_name'].'</h2>';
-		print '('.$user['title'].')<br><br>';
-		print '<p>'.$user['story'].'</p><br><br>';
-		print '<i>kontakt: '.$user['email'].'/'.$user['tel'].'</i><br><br><br><br><br>';
-
+		print mb_strtoupper('<h2>'.$user['f_name'].' '.$user['l_name'].'</h2>', 'UTF-8');
+		print '<h3>'.$user['title'].'</h3>';
+		print '<p>'.$user['story'].'</p>';
+		
 	print '</div>';
-
 }
+print '</div>';
+print '<div class="clear" style="clear: both">';
+
+
+
+
+include('footer.php');
 
 ?>
-
-<html>
-	<head>
-		<link href="css/temp_style.css" rel="stylesheet" type="text/css">
-	</head>
-</html>
