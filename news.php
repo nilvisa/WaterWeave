@@ -82,7 +82,6 @@ include('footer.php');
 
 ?>
 
-<script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/masonry.pkgd.js"></script>
 <script scr="js/imagesloaded.pkgd.min.js"></script>
 

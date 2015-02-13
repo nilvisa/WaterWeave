@@ -26,11 +26,11 @@
 		</a>
 		<nav>
 			<ul>
-				<li><a href="#">waterweave</a></li>
-				<li><a href="#">tekniken</a></li>
+				<li><a href="waterweave.php">waterweave</a></li>
+				<li><a href="teknik.php">tekniken</a></li>
 				<li><a href="team.php">teamet</a></li>
 				<li><a href="news.php">nyheter</a></li>
-				<li><a href="#">kontakt</a></li>
+				<li><a href="kontakt.php">kontakt</a></li>
 			</ul>
 		</nav>
 	</div>
