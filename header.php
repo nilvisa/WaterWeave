@@ -21,7 +21,7 @@
 
 <div id="header">
 	<div id="headermain">
-		<a href="#">
+		<a href="index.php">
 			<img src="img/head/logotyp_vector.png" id="logga">
 		</a>
 		<nav>
