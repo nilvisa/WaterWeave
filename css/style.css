@@ -227,13 +227,14 @@ p.readmore {
 
 /*footern*/
 #footer {
-	width:100%;
-	height:110px;
-	background-color: #666666;
-	margin-top: 70px;
+	width: 100%;
+	height: 85px;
+	background: #666;
+	margin: 70px 0px 0px 0px;
+	text-align: center;
 }
 
-#footer p{
+#footer p {
 	text-align: center;
 	font-size: 14px;
 	line-height: 14px;
@@ -243,32 +244,18 @@ p.readmore {
 #footermain {
 	max-width: 724px;
 	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0px auto;
 	text-align: center;
 	}
 
 #footermain .footertext {
 	width: 160px;
-	height: 50px;
-	margin: auto 25px;
+	margin: auto 10px;
 	display: inline-block;
+	vertical-align: middle;
 }
 
-/*#footermiddle {
-	margin: auto;
-	width:181px;
-	height: 60%;
-	float:left;
-}
 
-#footerright {
-	margin: auto;
-	width:181px;
-	height: 60%;
-	float:left;
-}
-*/
 /*#tempbottom {
 	height:500px;
 }*/
@@ -283,30 +270,28 @@ p.readmore {
 
 /*den responsiva delen*/
 @media screen and (max-width: 740px) 	{
-#waterweave {
-	width: 100%;
-}
-#tekniken {
-	width: 100%;
-}
+	#waterweave {
+		width: 100%;
+	}
+	#tekniken {
+		width: 100%;
+	}
 
-#footerleft, #footerright {
-	display:none;
-}
+	.left, .right {
+		display: none !important;
+	}
 
-#footermain {
-	width:181px;
-}
+	#footermain {
+		width:181px;
+	}
 
-#footer {
-	height:50px;
-}
+	#footer {
+		height:50px;
+	}
 
-#footermiddle {
-	margin-top:15px;
-}
-
-
+	.footertext{
+		padding-top: 5px;
+	}
 
 }
 

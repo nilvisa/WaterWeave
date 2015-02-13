@@ -9,7 +9,7 @@ $maria = getPerson('12');
 <div id="footer">
 	<div id="footermain">
 		
-		<div class="footertext">
+		<div class="footertext left">
 			<p>WaterWeave</br>
 			Vera Sandbergsallé 8</br>
 			412 96 Göteborg</p>
@@ -19,7 +19,7 @@ $maria = getPerson('12');
 			<p>© Copyright 2015</p>
 		</div>
 
-		<div class="footertext">
+		<div class="footertext right">
 			<p>Sandra Melin</br>
 			<?php print $sandra['tel']; ?> <br>
 
