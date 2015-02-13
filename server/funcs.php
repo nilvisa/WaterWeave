@@ -34,7 +34,7 @@ function addPerson()
 					{
 						if(isset($_POST['update']))
 						{
-							dbAdd("UPDATE waterweave.users 
+							dbAdd("UPDATE users 
 							SET f_name = '$f_name', l_name = '$l_name',
 							email = '$email', tel = '$tel', 
 							user_pic = '$pic_name', title = '$title', story = '$story'
@@ -44,7 +44,7 @@ function addPerson()
 						}
 						else
 						{
-							dbAdd("INSERT INTO waterweave.users (f_name, l_name, email, tel, user_pic, title, story)
+							dbAdd("INSERT INTO users (f_name, l_name, email, tel, user_pic, title, story)
 							VALUES('$f_name', '$l_name', '$email', '$tel', '$pic_name', '$title', '$story')");
 						
 							print "Du har nu lagt till ".$f_name;
@@ -60,7 +60,7 @@ function addPerson()
 			{
 				if(isset($_POST['update']))
 				{
-					dbAdd("UPDATE waterweave.users 
+					dbAdd("UPDATE users 
 					SET f_name = '$f_name', l_name = '$l_name',
 					email = '$email', tel = '$tel', 
 					title = '$title', story = '$story'
@@ -70,7 +70,7 @@ function addPerson()
 				}
 				else
 				{
-					dbAdd("INSERT INTO waterweave.users (f_name, l_name, email, tel, title, story)
+					dbAdd("INSERT INTO users (f_name, l_name, email, tel, title, story)
 							VALUES('$f_name', '$l_name', '$email', '$tel', '$title', '$story')");
 
 					print "Du har nu lagt till ".$f_name;
@@ -83,13 +83,13 @@ function addPerson()
 
 function getAll()
 {
-	return dbArray("SELECT * FROM waterweave.users
+	return dbArray("SELECT * FROM users
 		ORDER BY user_id DESC");
 }
 
 function getPerson($id)
 {
-	return dbRow("SELECT * FROM waterweave.users
+	return dbRow("SELECT * FROM users
 		WHERE user_id = '$id'");
 }
 
@@ -101,12 +101,12 @@ function movePlace($move)
 
 		if($move == 'add')
 		{
-			$curPlace = dbRow("SELECT FROM waterweave.users
+			$curPlace = dbRow("SELECT FROM users
 				SELECT place WHERE user_id = $user_id");
 
 			$place = $curPlace+1;
 
-			dbAdd("UPDATE waterweave.users
+			dbAdd("UPDATE users
 				SET place = $place WHERE user_id = $user_id");
 
 			print $user_id . $place;
@@ -151,7 +151,7 @@ function addNews()
 						{
 							if(isset($_POST['update']))
 							{
-								dbAdd("UPDATE waterweave.news
+								dbAdd("UPDATE news
 								SET news_title = '$news_title', news = '$news',
 								eng_sum = '$eng_sum', news_date = '$news_date',
 								news_pic = '$pic_name'
@@ -161,7 +161,7 @@ function addNews()
 							}
 							else
 							{
-								dbAdd("INSERT INTO waterweave.news (news_title, news, eng_sum, news_date, news_pic)
+								dbAdd("INSERT INTO news (news_title, news, eng_sum, news_date, news_pic)
 								VALUES('$news_title', '$news', '$eng_sum', '$news_date', '$pic_name')");
 
 								print 'Du har nu lagt till nyheten "'.$news_title.'"';
@@ -176,7 +176,7 @@ function addNews()
 				{ 
 					if(isset($_POST['update']))
 					{
-						dbAdd("UPDATE waterweave.news
+						dbAdd("UPDATE news
 							SET news_title = '$news_title', news = '$news',
 							eng_sum = '$eng_sum', news_date = '$news_date'
 							WHERE news_id = '$news_id'");
@@ -186,7 +186,7 @@ function addNews()
 					}
 					else
 					{
-						dbAdd("INSERT INTO waterweave.news (news_title, news, eng_sum, news_date)
+						dbAdd("INSERT INTO news (news_title, news, eng_sum, news_date)
 								VALUES('$news_title', '$news', '$eng_sum', '$news_date')");
 
 						print 'Du har nu lagt till nyheten "'.$news_title.'"';
@@ -199,13 +199,13 @@ function addNews()
 
 function getAllNews()
 {
-	return dbArray("SELECT * FROM waterweave.news
+	return dbArray("SELECT * FROM news
 		ORDER BY news_date DESC");
 }
 
 function getNews($id)
 {
-	return dbRow("SELECT * FROM waterweave.news
+	return dbRow("SELECT * FROM news
 		WHERE news_id = '$id'");
 }
 
