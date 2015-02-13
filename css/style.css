@@ -107,7 +107,7 @@ nav li a:hover{
 	z-index: 1;
 }
 
-nav li a.currentLink{
+.currentLink{
 	border-bottom: 7px solid #33ccff;
 	padding-bottom: 4px;
 	z-index: 1;
