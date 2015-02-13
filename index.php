@@ -16,7 +16,9 @@
 			<h1>waterweave</h1>
 			<p>WaterWeave är ett Göteborgsbaserat<br> start-up som utvecklar ett textilbaserad<br> vattenreningssystem för rening av<br> dagvatten.</p>
 		</div>
+		<div class="linkwrapper">
 		<a href="#"><div class="button"><p class="readmore">Läs mer</p></div></a>
+		</div>
 	</div>
 	<div id="tekniken">
 		<img src="img/2_s.png" class="col_image">
@@ -24,7 +26,9 @@
 			<h1>tekniken</h1>
 			<p>WaterWeave arbetar med att ta fram ett<br> textilbaserat vattenreningssystem som<br> bygger på biologisk rening, en ide som<br> ursprungligen kommer från<br> Textilhögskolan i Borås.</p>
 		</div>
+		<div class="linkwrapper">
 		<a href="#"><div class="button"><p class="readmore">Läs mer</p></div></a>
+		</div>
 	</div>
 	<div class="clearfix"></div>
 </div>
