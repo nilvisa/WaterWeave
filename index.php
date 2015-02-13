@@ -2,11 +2,8 @@
 
 
 
-
-
-
-<img src="img/head/1_h.png" id="imgflow">
-<div id="pil">
+<div class="wrap">
+	<img src="img/head/1_h.png" id="imgflow">
 </div>
 <div id="main">
 	<div id="vision">
