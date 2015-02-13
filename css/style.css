@@ -75,6 +75,9 @@ a {
 
 nav {
 	margin-top: 45px;
+	margin-right:10px;
+	/*position:relative;
+	bottom:0px;*/
 	float:right;
 }
 
@@ -86,7 +89,7 @@ nav ul {
 
 nav li {
 	display: inline;
-	margin-left:10px;
+	margin-left:6px;
 }
 
 nav li a {
@@ -95,7 +98,7 @@ nav li a {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     font-variant: small-caps;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 
