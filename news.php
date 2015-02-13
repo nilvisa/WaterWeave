@@ -28,9 +28,8 @@ print '<div id="headerimg"><img src="img/head/5_h.png"></div>';
 				}
 				
 				print mb_strtolower('<h1>'.$nyhet['news_title'].'</h1>', 'UTF-8');
+				print '<p>'.$nyhet['news'].'</p>';
 				print '<p>('.$nyhet['news_date'].')</p><br><br>';
-				print '<p>'.$nyhet['news'].'</p><br>';
-				print '<br><br>';
 				
 				print '<div class="blue_bar"></div>';
 		}
@@ -66,7 +65,7 @@ foreach($news as $news)
 			print '<p>'.$news['news'].'</p>';
 		}
 
-		print '<div class="blue_bar"></div>';
+		print '<div class="border"></div>';
 
 	print '</div>';
 
