@@ -24,7 +24,7 @@ print '<div id="headerimg"><img src="img/head/5_h.png"></div>';
 
 				if($nyhet['news_pic'])
 				{
-					print '<img src="img/news/'.$nyhet['news_pic'].'">';			
+					print '<div class="news_img"><img src="img/news/'.$nyhet['news_pic'].'"></div>';			
 				}
 				
 				print mb_strtolower('<h1>'.$nyhet['news_title'].'</h1>', 'UTF-8');
