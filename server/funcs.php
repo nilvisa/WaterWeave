@@ -69,7 +69,7 @@ function addPerson()
 				if(isset($_POST['update']))
 				{
 					$place = filter_var($_POST['place'], FILTER_SANITIZE_SPECIAL_CHARS);
-					
+
 					dbAdd("UPDATE users 
 					SET f_name = '$f_name', l_name = '$l_name',
 					email = '$email', tel = '$tel', 
@@ -116,7 +116,6 @@ function addNews()
 	{
 		$news_title = $_POST['news_title'];
 		$news = $_POST['news'];
-		$eng_sum = $_POST['eng_sum'];
 		$news_date = $_POST['news_date'];
 		$img = $_FILES['news_pic'];
 		$pic_name = $img['name'];
@@ -128,7 +127,7 @@ function addNews()
 			$update = $_POST['update'];
 		}
 	
-		if($news_title == "" || $news == "" || $eng_sum == "" || $news_date == "")
+		if($news_title == "" || $news == "" || $news_date == "")
 		{
 			print "Du glömnde fylla i ett eller flera fält.";
 		}
@@ -148,15 +147,14 @@ function addNews()
 							{
 								dbAdd("UPDATE news
 								SET news_title = '$news_title', news = '$news',
-								eng_sum = '$eng_sum', news_date = '$news_date',
-								news_pic = '$pic_name'
+								news_date = '$news_date', news_pic = '$pic_name'
 								WHERE news_id = '$news_id'");
 
 								print 'Du har updaterat nyheten "'.$news_title.'"';
 							}
 							else
 							{
-								dbAdd("INSERT INTO news (news_title, news, eng_sum, news_date, news_pic)
+								dbAdd("INSERT INTO news (news_title, news, news_date, news_pic)
 								VALUES('$news_title', '$news', '$eng_sum', '$news_date', '$pic_name')");
 
 								print 'Du har nu lagt till nyheten "'.$news_title.'"';
@@ -172,8 +170,7 @@ function addNews()
 					if(isset($_POST['update']))
 					{
 						dbAdd("UPDATE news
-							SET news_title = '$news_title', news = '$news',
-							eng_sum = '$eng_sum', news_date = '$news_date'
+							SET news_title = '$news_title', news = '$news', news_date = '$news_date'
 							WHERE news_id = '$news_id'");
 
 						print 'Du har updaterat nyheten "'.$news_title.'"';
@@ -181,8 +178,8 @@ function addNews()
 					}
 					else
 					{
-						dbAdd("INSERT INTO news (news_title, news, eng_sum, news_date)
-								VALUES('$news_title', '$news', '$eng_sum', '$news_date')");
+						dbAdd("INSERT INTO news (news_title, news, news_date)
+								VALUES('$news_title', '$news', '$news_date')");
 
 						print 'Du har nu lagt till nyheten "'.$news_title.'"';
 					}
