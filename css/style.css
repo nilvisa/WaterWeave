@@ -507,10 +507,21 @@ p.readmore {
 	padding: 0px;
 	display: inline-block;
 	/*float:left;*/
-
+}
 
 /* ADMINSIDAN */
 
+
+#main_admin {
+	max-width: 724px;
+	margin: 85px auto;
+}
+
+#formdiv {
+	width: 400px;
+	margin: 150px auto;
+	text-align: center;
+}
 
 .edit {
 	width: 400px;
@@ -518,4 +529,44 @@ p.readmore {
 	float: left;
 	background: #eee;
 	margin: 10px;
+}
+
+
+/* FORMULÄR */
+
+input, textarea {
+	width: 90%;
+	padding: 7px;
+	margin: 10px;
+	background: #5e6062;
+	color: #fff;
+	font-family: 'Vollkorn', serif;
+	font-size: 16px;
+	border: 0px;
+	border-bottom: 7px #5e6062 solid;
+	outline: none;
+}
+
+input:focus, textarea:focus {
+	border-bottom: 7px solid;
+	border-color: #33ccff;
+}
+
+.button {
+	width: 25%;
+	padding: 7px;
+	background: #5e6062;
+	color: #fff;
+	font-family: 'Vollkorn', serif;
+	font-size: 16px;
+	border: 0px;
+	outline: none;
+}
+.button:hover {
+	color: #fff;
+	background: #33ccff;
+}
+.myButton:active {
+	position: relative;
+	top: 1px;
 }
