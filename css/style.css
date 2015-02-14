@@ -34,6 +34,10 @@ p {
 	margin: 0px;
 }
 
+p.citat {
+	font-style: italic;
+}
+
 a {
 	text-decoration: none;
 }
@@ -487,6 +491,22 @@ p.readmore {
   transform: skewX(-60deg);
 }
 
+
+
+/*waterweave-sidan*/
+.wwtext {
+	margin: 0 0 48px 48px;
+}
+
+
+
+
+.wwimg img {
+	width: 200px;
+	margin: 0 auto 35px auto;
+	padding: 0px;
+	display: inline-block;
+	/*float:left;*/
 
 
 /* ADMINSIDAN */
