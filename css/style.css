@@ -322,6 +322,7 @@ p.readmore {
 	width: 290px;
 	margin: 0 0 48px 48px;
 	float: left;
+	text-align: center;
 }
 	.team img {
 		width: 170px;
