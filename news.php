@@ -29,9 +29,9 @@ print '<div id="headerimg"><img src="img/head/5_h.png"></div>';
 				
 				print mb_strtolower('<h1>'.$nyhet['news_title'].'</h1>', 'UTF-8');
 				print '<p>'.$nyhet['news'].'</p>';
-				print '<span class="datum">'.convertDate($nyhet['news_date']).'</span><br><br>';
+				print '<div class="datum">'.convertDate($nyhet['news_date']).'</div>';
 				
-				print '<div class="blue_bar"></div>';
+				print '<div class="border"></div>';
 		}
 	print '</div>';
 
@@ -41,7 +41,7 @@ print '<div id="headerimg"><img src="img/head/5_h.png"></div>';
 foreach($news as $news)
 {
 	print '<div class="item">';
-		print '<div class="wrap">';
+		print '<div class="wrap pil">';
 
 		if($news['news_pic'])
 		{
@@ -55,9 +55,9 @@ foreach($news as $news)
 		print '</div>';
 		print '<div class="arrow-down"></div>';
 		
-		if(strlen($news['news']) > 130)
+		if(strlen($news['news']) > 110)
 		{
-			$sumNews = substr($news['news'], 0, 130).'...';
+			$sumNews = mb_substr($news['news'], 0, 110, 'UTF-8').'...';
 			print '<p>'.$sumNews.' <a href="news.php?news='.$news['news_id'].'">läs mer</a></p>';
 		}
 		else

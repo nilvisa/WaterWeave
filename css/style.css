@@ -27,10 +27,9 @@ h2 {
 
 p {
 	font-family: 'Vollkorn', serif;
-	font-size: 15px;
-	line-height: 18px;
+	font-size: 16px;
+	line-height: 20px;
 	color: #666;
-	text-align: left;
 	padding: 14px;
 	margin: 0px;
 }
@@ -107,7 +106,7 @@ nav li a:hover{
 	z-index: 1;
 }
 
-.currentLink{
+nav .currentLink{
 	border-bottom: 7px solid #33ccff;
 	padding-bottom: 4px;
 	z-index: 1;
@@ -136,7 +135,7 @@ nav li a:hover{
 #main {
 	max-width: 724px;
 	margin: 0 auto;
-	text-align: center;
+	/*text-align: center;*/
 }
 	#main h1 {
 		margin-bottom: 35px;
@@ -316,11 +315,13 @@ p.readmore {
 
 /*Lovisas CSS*/
 
+
+/* TEAMSIDAN */
+
 .team {
 	width: 290px;
 	margin: 0 0 48px 48px;
 	float: left;
-	/*background: #ccc;*/
 }
 	.team img {
 		width: 170px;
@@ -350,22 +351,16 @@ p.readmore {
 		text-align: center;
 		padding: 14px;
 		margin: 0px;
-		/*background: yellow;*/
 	}
 
 
-.edit {
-	width: 400px;
-	height: 450px;
-	float: left;
-	background: #eee;
-	margin: 10px;
-}
+
+/* VALD NYHET */
 
 #nyhet {
 	width: 628px;
 	margin: 0px auto;
-	text-align: center;
+	padding: 0px;
 }
 	#nyhet img{
 		max-width: 628px;
@@ -376,14 +371,28 @@ p.readmore {
 
 	#nyhet h1{
 		color: #666;
-		text-align: left;
 		margin: 5px 0px;
+		text-align: center;
 	}
 
 	#nyheter p{
 		margin: 0px 0px;
 		padding: 0px;
+		text-align: left;
 	}
+
+.datum {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 14px;
+	text-align: left;
+	color: #666;
+	margin: 30px 15px 7px 15px;
+	padding: 0px;
+}
+
+
+/* NYHETSFLÖDET */
 
 #container {
 	width: 724px;
@@ -395,7 +404,7 @@ p.readmore {
 	margin: 0 0 0 48px;
 	text-align: center;
 }
-	.item a {
+	.item a{
 		font-family: 'Open Sans', sans-serif;
 		font-size: 18px;
 		line-height: 14px;
@@ -416,17 +425,7 @@ p.readmore {
 }
 
 
-/* BLÅ PIL
-
-.arrow-down {
-	margin: -4px auto;
-	width: 0; 
-	height: 0; 
-	border-left: 28px solid transparent;
-	border-right: 28px solid transparent;
-	
-	border-top: 18px solid #33ccff;
-}*/
+/* PIL-CSS:EN */
 
 .wrap {
   position: relative;
@@ -442,14 +441,22 @@ p.readmore {
   height: auto;
   display: block;
 }
+
 .wrap:before, .wrap:after {
   content:'';
   position: absolute;
   bottom: 0;
   width: 50%;
   background-color: inherit;
-  padding-bottom:3%;
+  padding-bottom: 3%;
 }
+	.pil:before, .pil:after {
+		padding-bottom: 5%;
+	}
+	.pil:hover {
+		opacity: 0.7;
+	}
+
 .wrap:before {
   right: 50%;
   -ms-transform-origin: 100% 100%;
@@ -470,3 +477,14 @@ p.readmore {
 }
 
 
+
+/* ADMINSIDAN */
+
+
+.edit {
+	width: 400px;
+	height: 450px;
+	float: left;
+	background: #eee;
+	margin: 10px;
+}
