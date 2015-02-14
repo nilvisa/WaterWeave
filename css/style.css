@@ -556,12 +556,11 @@ p.readmore {
 }
 
 .edit {
-	width: 400px;
-	height: 450px;
-	float: left;
-	background: #eee;
-	margin: 10px;
-}
+	max-width: 700px;
+	margin: auto;
+	text-align: center;
+	background: #ccc;
+	}
 
 
 /* FORMULÄR */

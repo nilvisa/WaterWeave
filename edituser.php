@@ -15,11 +15,12 @@ include('adminheader.php');
 
 	$user = getAll();
 
+print '<div id="formdiv">';
+	print '<h1>redigera teamet</h1>';
 	if(!empty($user))
 	{
 		foreach($user as $user)
 		{
-			print '<div class="edit">';
 				print '<div class="delete">';
 					print '<form method="post">
 						<input type="hidden" name="id" value="'.$user['user_id'].'">
@@ -32,29 +33,59 @@ include('adminheader.php');
 
 				print '<form method="post" enctype="multipart/form-data" action="adduser.php">
 					<input type="hidden" name="update" value="update">
-					<input type="hidden" name="user_id" value="'.$user['user_id'].'">
-					<input type="text" name="f_name" value="'.$user['f_name'].'"><br>
-					<input type="text" name="l_name" value="'.$user['l_name'].'"><br>
-					<input type="text" name="email" value="'.$user['email'].'"><br>
-					<input type="text" name="tel" value="'.$user['tel'].'"><br>
-					<input type="text" name="title" value="'.$user['title'].'"><br>
-					<textarea name="story" rows="5" cols="22">'.$user['story'].'</textarea><br>
-					<input type="text" name="place" value="'.$user['place'].'"><br>';
 
+				<div class="inputdiv">
+					<input type="hidden" name="user_id" value="'.$user['user_id'].'">
+				</div>
+
+				<div class="inputdiv">
+					<input type="text" name="f_name" value="'.$user['f_name'].'">
+				</div>
+
+				<div class="inputdiv">
+					<input type="text" name="l_name" value="'.$user['l_name'].'">
+				</div>
+
+				<div class="inputdiv">
+					<input type="text" name="email" value="'.$user['email'].'">
+				</div>
+
+				<div class="inputdiv">
+					<input type="text" name="tel" value="'.$user['tel'].'">
+				</div>
+
+				<div class="inputdiv">
+					<input type="text" name="title" value="'.$user['title'].'">
+				</div>
+				
+				<div class="inputdiv">
+					<input type="text" name="place" value="'.$user['place'].'">
+				</div>';
+
+				print '<div class="inputdiv">
+					<textarea name="story" rows="5" cols="22">'.$user['story'].'</textarea>
+				</div>';
+
+				print '<div class="inputdiv">';
 					if($user['user_pic']){
 						print '<input type="file" name="user_pic"> <img src="img/pers/'.$user['user_pic'].'" width="100px"><br>';
 					}
 					else{
 						print '<input type="file" name="user_pic"> <img src="img/pers/profile.png" width="100px"><br>';
 					}
+					print '</div>';
+
+
+			
 					
 					print '<input type="submit" name="addPerson" value="Ändra">
 				</form>';
-			print '</div>';
 
 		}
 	}
 	else print "<p>Det finns inga personer inlaggda i databasen än!</p>";
+
+	print '</div>';
 
 	
 
