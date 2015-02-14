@@ -326,6 +326,7 @@ p.readmore {
 	width: 290px;
 	margin: 0 0 48px 48px;
 	float: left;
+	text-align: center;
 }
 	.team img {
 		width: 170px;
@@ -366,13 +367,6 @@ p.readmore {
 	margin: 0px auto;
 	padding: 0px;
 }
-	#nyhet img{
-		max-width: 628px;
-		max-height: 500px;
-		margin: 0px 0px 25px 0px;
-		padding: 0px;
-	}
-
 	#nyhet h1{
 		color: #666;
 		margin: 5px 0px;
@@ -383,6 +377,23 @@ p.readmore {
 		margin: 0px 0px;
 		padding: 0px;
 		text-align: left;
+	}
+
+.news_img {
+	width: 628px;
+	height: 420px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+}
+	.news_img img{
+		position: absolute;
+		left: 50%;
+  		top: 30%;
+		width: 100%;
+		-webkit-transform: translate(-50%,-30%);
+      	-ms-transform: translate(-50%,-30%);
+        transform: translate(-50%,-30%);
 	}
 
 .datum {

@@ -1,6 +1,7 @@
 <?php
 
-require_once('server/funcs.php');
+include('adminheader.php');
+
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 	
@@ -24,11 +25,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 ?>
 
 <html>
-<head>
-	<meta charset="utf-8">
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-</head>
-
 
 	<form method="post" enctype="multipart/form-data">
 		<input type="text" name="f_name" placeholder="Förnamn" 
