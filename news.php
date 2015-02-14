@@ -29,7 +29,7 @@ print '<div id="headerimg"><img src="img/head/5_h.png"></div>';
 				
 				print mb_strtolower('<h1>'.$nyhet['news_title'].'</h1>', 'UTF-8');
 				print '<p>'.$nyhet['news'].'</p>';
-				print '<p>('.$nyhet['news_date'].')</p><br><br>';
+				print '<span class="datum">'.convertDate($nyhet['news_date']).'</span><br><br>';
 				
 				print '<div class="blue_bar"></div>';
 		}
