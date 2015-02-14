@@ -12,7 +12,6 @@ function addPerson()
 		$tel = filter_var($_POST['tel'], FILTER_SANITIZE_SPECIAL_CHARS);
 		$title = filter_var($_POST['title'], FILTER_SANITIZE_SPECIAL_CHARS);
 		$story = filter_var($_POST['story'], FILTER_SANITIZE_SPECIAL_CHARS);
-		$place = filter_var($_POST['place'], FILTER_SANITIZE_SPECIAL_CHARS);
 		$img = $_FILES['user_pic'];
 		$pic_name = $img['name'];
 		$pic = checkIMG($img, 'pers');
@@ -35,6 +34,8 @@ function addPerson()
 					{
 						if(isset($_POST['update']))
 						{
+							$place = filter_var($_POST['place'], FILTER_SANITIZE_SPECIAL_CHARS);
+
 							dbAdd("UPDATE users 
 							SET f_name = '$f_name', l_name = '$l_name',
 							email = '$email', tel = '$tel', 
@@ -46,8 +47,13 @@ function addPerson()
 						}
 						else
 						{
-							dbAdd("INSERT INTO users (f_name, l_name, email, tel, user_pic, title, story)
-							VALUES('$f_name', '$l_name', '$email', '$tel', '$pic_name', '$title', '$story')");
+							$lastplace = dbRow("SELECT place FROM users
+								ORDER BY place DESC");
+
+							$newplace = $lastplace['place']+1;
+
+							dbAdd("INSERT INTO users (f_name, l_name, email, tel, user_pic, title, story, place)
+							VALUES('$f_name', '$l_name', '$email', '$tel', '$pic_name', '$title', '$story', '$newplace')");
 						
 							print "Du har nu lagt till ".$f_name;
 						}
@@ -62,6 +68,8 @@ function addPerson()
 			{
 				if(isset($_POST['update']))
 				{
+					$place = filter_var($_POST['place'], FILTER_SANITIZE_SPECIAL_CHARS);
+					
 					dbAdd("UPDATE users 
 					SET f_name = '$f_name', l_name = '$l_name',
 					email = '$email', tel = '$tel', 
@@ -72,8 +80,14 @@ function addPerson()
 				}
 				else
 				{
-					dbAdd("INSERT INTO users (f_name, l_name, email, tel, title, story)
-							VALUES('$f_name', '$l_name', '$email', '$tel', '$title', '$story')");
+
+					$lastplace = dbRow("SELECT place FROM users
+						ORDER BY place DESC");
+
+					$newplace = $lastplace['place']+1;
+
+					dbAdd("INSERT INTO users (f_name, l_name, email, tel, title, story, place)
+							VALUES('$f_name', '$l_name', '$email', '$tel', '$title', '$story', '$newplace')");
 
 					print "Du har nu lagt till ".$f_name;
 				}
