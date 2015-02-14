@@ -217,6 +217,45 @@ function delete($table, $col_id, $col_name)
 }
 
 
+function convertDate($date)
+{
+	$year = substr($date, 0, 4);
+
+	$monthNo = substr($date, 5, 2);
+	$monthArray = [
+					'01' => "januari",
+					'02' => "februari",
+					'03' => "mars",
+					'04' => "april",
+					'05' => "maj",
+					'06' => "juni",
+					'07' => "juli",
+					'08' => "augusti",
+					'09' => "september",
+					'10' => "oktober",
+					'11' => "november",
+					'12' => "december"];
+
+	$month = $monthArray[$monthNo];
+
+	$day = substr($date, 8, 2);
+	$end = ':e';
+
+	if($day == 1 || $day == 2 || $day == 21 || $day == 22)
+	{
+		$end = ':a';
+	}
+
+	if($day < 10)
+	{
+		$day = substr($day, 1, 1);
+	}
+
+	return $day.$end.' '.$month.' '.$year;
+
+}
+
+
 
 
 
