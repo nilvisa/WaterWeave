@@ -498,16 +498,30 @@ p.readmore {
 	margin: 0 0 48px 48px;
 }
 
-
-
-
 .wwimg img {
 	width: 200px;
 	margin: 0 auto 35px auto;
 	padding: 0px;
 	display: inline-block;
+}
+
+/*teknik-sidan*/
+
+#illustration img {
+	width: 500px;
+	margin: 0 auto 35px auto;
+	padding: 0px;
+	display: inline-block;
+}
+
+.teknik_img img {
+		width: 200px;
+	margin: 0 auto 35px auto;
+	padding: 0px;
+	display: inline-block;
 	/*float:left;*/
 }
+
 
 /* ADMINSIDAN */
 
