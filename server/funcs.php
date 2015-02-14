@@ -12,6 +12,7 @@ function addPerson()
 		$tel = filter_var($_POST['tel'], FILTER_SANITIZE_SPECIAL_CHARS);
 		$title = filter_var($_POST['title'], FILTER_SANITIZE_SPECIAL_CHARS);
 		$story = filter_var($_POST['story'], FILTER_SANITIZE_SPECIAL_CHARS);
+		$place = filter_var($_POST['place'], FILTER_SANITIZE_SPECIAL_CHARS);
 		$img = $_FILES['user_pic'];
 		$pic_name = $img['name'];
 		$pic = checkIMG($img, 'pers');
@@ -37,7 +38,8 @@ function addPerson()
 							dbAdd("UPDATE users 
 							SET f_name = '$f_name', l_name = '$l_name',
 							email = '$email', tel = '$tel', 
-							user_pic = '$pic_name', title = '$title', story = '$story'
+							user_pic = '$pic_name', title = '$title', story = '$story',
+							place = '$place'
 							WHERE user_id = '$user_id'");
 
 							print $f_name."s info har uppdaterats!";
@@ -63,7 +65,7 @@ function addPerson()
 					dbAdd("UPDATE users 
 					SET f_name = '$f_name', l_name = '$l_name',
 					email = '$email', tel = '$tel', 
-					title = '$title', story = '$story'
+					title = '$title', story = '$story', place = '$place'
 					WHERE user_id = '$user_id'");
 
 					print $f_name."s info har uppdaterats!";
@@ -84,34 +86,13 @@ function addPerson()
 function getAll()
 {
 	return dbArray("SELECT * FROM users
-		ORDER BY user_id DESC");
+		ORDER BY place");
 }
 
 function getPerson($id)
 {
 	return dbRow("SELECT * FROM users
 		WHERE user_id = '$id'");
-}
-
-function movePlace($move)
-{
-	if(isset($_POST['$move']))
-	{
-		$user_id = $_POST['user_id'];
-
-		if($move == 'add')
-		{
-			$curPlace = dbRow("SELECT FROM users
-				SELECT place WHERE user_id = $user_id");
-
-			$place = $curPlace+1;
-
-			dbAdd("UPDATE users
-				SET place = $place WHERE user_id = $user_id");
-
-			print $user_id . $place;
-		}
-	}
 }
 
 

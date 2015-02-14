@@ -25,7 +25,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 <html>
 <head>
 	<meta charset="utf-8">
-	<link href="css/temp_style.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 
@@ -54,21 +54,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	{
 		foreach($user as $user)
 		{
-			print '
-			<div class="edit">
-				<div class="delete">
-					<form method="post">
+			print '<div class="edit">';
+				print '<div class="delete">';
+					print '<form method="post">
 						<input type="hidden" name="id" value="'.$user['user_id'].'">
 						<input type="hidden" name="name" value="'.$user['f_name'].'">
-						<input type="submit" name="add" value="Flytta Upp">
-						<input type="submit" name="sub" value="Flytta Ner">
 						<input type="submit" name="delete" value="Radera">
-					</form>
-				</div>
+					</form>';
+				print '</div>';
 
-				<h2>Redigera '.$user['f_name'].'</h2>
+				print '<h2>Redigera '.$user['f_name'].'</h2>';
 
-				<form method="post" enctype="multipart/form-data" action="adduser.php">
+				print '<form method="post" enctype="multipart/form-data" action="adduser.php">
 					<input type="hidden" name="update" value="update">
 					<input type="hidden" name="user_id" value="'.$user['user_id'].'">
 					<input type="text" name="f_name" value="'.$user['f_name'].'"><br>
@@ -76,7 +73,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 					<input type="text" name="email" value="'.$user['email'].'"><br>
 					<input type="text" name="tel" value="'.$user['tel'].'"><br>
 					<input type="text" name="title" value="'.$user['title'].'"><br>
-					<textarea name="story" rows="5" cols="22">'.$user['story'].'</textarea><br>';
+					<textarea name="story" rows="5" cols="22">'.$user['story'].'</textarea><br>
+					<input type="text" name="place" value="'.$user['place'].'"><br>';
 
 					if($user['user_pic']){
 						print '<input type="file" name="user_pic"> <img src="img/pers/'.$user['user_pic'].'" width="100px"><br>';
@@ -86,8 +84,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 					}
 					
 					print '<input type="submit" name="addPerson" value="Ändra">
-				</form>
-			</div>';
+				</form>';
+			print '</div>';
 
 		}
 	}
