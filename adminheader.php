@@ -24,6 +24,7 @@
 			<ul>
 				<li><a href="addnews.php">ny nyhet</a></li>
 				<li><a href="editnews.php">redigera nyheter</a></li>
+				<li> | </li>
 				<li><a href="adduser.php">ny i teamet</a></li>
 				<li><a href="edituser.php">redigera teamet</a></li>
 			</ul>

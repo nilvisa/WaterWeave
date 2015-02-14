@@ -29,7 +29,7 @@ foreach($user as $user)
 	print '</div>';
 }
 print '</div>';
-print '<div class="clear" style="clear: both">';
+print '<div style="clear: both"></div>';
 
 
 
