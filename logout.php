@@ -26,11 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 
 <div style="margin-top:100px;">
-<h1>välkommen till admin-sidan</h1>
 	<div id="formdiv">
 		<h1>logga ut</h1>
 
-		<form action="adminstart.php" method="post">
+		<form action="logout.php" method="post">
 			
 			<input type="submit" value="Logga ut" name="logout" class="button">
 	

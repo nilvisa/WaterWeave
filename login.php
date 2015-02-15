@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 		$_SESSION["login"] = "1";
-		header("location:adminstart.php");
+		header("location:addnews.php");
 
 
 	}
