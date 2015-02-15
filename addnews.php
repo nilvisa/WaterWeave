@@ -1,92 +1,69 @@
 <?php
 
-require_once('server/funcs.php');
-
-if($_SERVER["REQUEST_METHOD"] == "POST")
-{
-	if(isset($_POST['addNews']))
-	{
-		addNews();
-	}
-	if(isset($_POST['delete']))
-	{
-		delete('waterweave.news', 'news_id', 'news_title');
-	}
-}
+include('adminheader.php');
 
 ?>
 
 <html>
-<head>
-	<meta charset="utf-8">
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-</head>
 
+	<div id="formdiv">
+
+<?php
+
+	if($_SERVER["REQUEST_METHOD"] == "POST")
+	{
+		print '<div class="msg" style="width: 90%">';
+
+		if(isset($_POST['addNews']))
+		{
+			addNews();
+		}
+
+		print '</div>';
+	}
+
+?>
+
+	<h1>lägg till en ny nyhet</h1>
 	<form method="post" enctype="multipart/form-data">
+		
+		<div class="inputdiv">
+			<input type="text" name="news_title" placeholder="Titel"
+			value="<?php if(isset($_POST['news_title'])){ echo htmlentities($_POST['news_title']);} ?>"><br>
+		</div>
 
-		<input type="text" name="news_title" placeholder="Titel"
-		value="<?php if(isset($_POST['news_title'])){ echo htmlentities($_POST['news_title']);} ?>"><br>
+		<div class="inputdiv">
+			<input type="text" name="news_date" placeholder="åååå-mm-dd"
+			value="<?php if(isset($_POST['news_date'])){ echo htmlentities($_POST['news_date']);} ?>"><br>
+		</div>
 
-		<input type="text" name="news_date" placeholder="åååå-mm-dd"
-		value="<?php if(isset($_POST['news_date'])){ echo htmlentities($_POST['news_date']);} ?>"><br>
+		<div class="inputdiv stor">
+			<textarea name="news" placeholder="Nyheten" rows="5" cols="22"><?php if(isset($_POST['news'])){ echo htmlentities($_POST['news']);} ?></textarea><br>
+		</div>
 
-		<textarea name="news" placeholder="Nyheten" rows="5" cols="22"><?php if(isset($_POST['news'])){ echo htmlentities($_POST['news']);} ?></textarea><br>
+		<div class="inputdiv">
+			<input type="file" name="news_pic">
+		</div>
+		
+		<input type="submit" name="addNews" value="Lägg till" class="button">
 
-		<input type="file" name="news_pic"> Välj en bild (valfritt)<br>
-
-		<br><br>
-		<input type="submit" name="addNews" value="Lägg till">
+		<div style="clear: both"></div>
+		
+		<div class="lathund">
+			<h2>&lt;br&gt;</h2><p> Radbrytning</p><br>
+			<h2>&lt;b&gt; text &lt;/b&gt;</h2><p> Fetstilt</p><br>
+			<h2>&lt;i&gt; text &lt;/i&gt;</h2><p> Kursivt</p><br>
+			<h2>&lt;a href="http://adress" target="new"&gt;länk&lt;/a&gt;</h2><p> Länk (öppnas i ny flik)</p><br>
+			<h2>&lt;img src="http://bildadress" class="news_img"&gt;</h2><p> Extra bild</p><br>
+			
+		</div>
+	
 	</form>
 	<br><br>
-
-	<hr>
 
 </html>
 
 <?php
-	
-	$news = getAllNews();
-
-	if(!empty($news))
-	{
-		foreach($news as $news)
-		{
-			print '<div class="edit">';
-				print '<div class="delete">';
-					print '<form method="post">
-						<input type="hidden" name="id" value="'.$news['news_id'].'">
-						<input type="hidden" name="name" value="'.$news['news_title'].'">
-						<input type="submit" name="delete" value="Radera">
-					</form>';
-				print '</div>';
-
-				print mb_strtolower('<h2>Redigera "'.$news['news_title'].'"</h2>', 'UTF-8');
-
-				print'<form method="post" enctype="multipart/form-data">
-					<input type="hidden" name="update" value="update">
-					<input type="hidden" name="news_id" value="'.$news['news_id'].'">
-					<input type="text" name="news_title" value="'.$news['news_title'].'"><br>
-					<input type="text" name="news_date" value="'.$news['news_date'].'"><br>
-					<textarea name="news" rows="5" cols="22">'.$news['news'].'</textarea><br>';
-
-					if($news['news_pic'])
-					{
-						print '<input type="file" name="news_pic"> <img src="img/news/'.$news['news_pic'].'" width="100px"><br>';
-					}
-					else
-					{
-						print '<input type="file" name="news_pic"> <img src="img/news/logo.png" width="100px"><br>';
-					}
-					
-					print '<input type="submit" name="addNews" value="Ändra">
-				</form>';
-			print '</div>';
-		}
-	}
-	else print "<p>Det finns inga nyhter att visa än!</p>";
-
 	
 
 ?>

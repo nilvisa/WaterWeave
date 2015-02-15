@@ -547,6 +547,31 @@ p.readmore {
 	float: left;
 	margin: 0px auto;
 }
+	.inputdiv h2, .place h2{
+	text-align: right;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+	}
+
+.stor {
+	width: 100%;
+}
+	.stor input, .stor textarea {
+		width: 95%;
+	}
+
+#knapp {
+	vertical-align: bottom;
+}
+
+.lathund {
+	text-align: left;
+	padding: 0px 15px;
+}
+	.lathund p, .lathund h2 {
+		display: inline;
+	}
 
 .msg {
 	width: 300px;
@@ -590,12 +615,6 @@ div.delete {
 	top: 1px;
 }
 
-.place h2 {
-	text-align: right;
-	margin: 0px;
-	padding: 0px;
-}
-
 .place input {
 	width: 25px;
 	background: #fff;
@@ -620,7 +639,10 @@ input, textarea {
 	font-size: 16px;
 	border: 0px;
 	border-bottom: 7px #5e6062 solid;
+	border-radius: 0;
 	outline: none;
+	-webkit-appearance: none;
+
 }
 
 input:focus, textarea:focus {
@@ -637,6 +659,7 @@ input:focus, textarea:focus {
 	font-size: 16px;
 	border: 0px;
 	outline: none;
+	-webkit-appearance: none;
 }
 .button:hover {
 	color: #fff;
