@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if($myusername == $username && $mypassword == $password){
 
 
-		$_SESSION["login"] = 1;
+		$_SESSION["login"] = "1";
 		header("location:adminstart.php");
 
 
