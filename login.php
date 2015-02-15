@@ -1,6 +1,7 @@
 <?php
 
-
+$ttl = 60 * 60; //TimeToLive - för sessionen. 60*60 alltså en timma.
+session_set_cookie_params($ttl);
 session_start();
 
 
