@@ -39,13 +39,15 @@ include('adminheader.php');
 			<?php
 
 				if($_SERVER["REQUEST_METHOD"] == "POST")
-	
-				if(isset($_POST['addPerson']))
 				{
-					print '<div class="msg">';
-					print addPerson();
-					print '</div>';
+					if(isset($_POST['addPerson']))
+					{
+						print '<div class="msg">';
+						print addPerson();
+						print '</div>';
+					}
 				}
+	
 			?>
 
 			<div style="clear: both"></div>

@@ -538,11 +538,40 @@ p.readmore {
 	padding: 0 30px;
 }
 
+.block {
+	position: relative;
+}
+
 .inputdiv {
 	width: 350px;
 	float: left;
 	margin: 0px auto;
 }
+	.inputdiv h2, .place h2{
+	text-align: right;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+	}
+
+.stor {
+	width: 100%;
+}
+	.stor input, .stor textarea {
+		width: 95%;
+	}
+
+#knapp {
+	vertical-align: bottom;
+}
+
+.lathund {
+	text-align: left;
+	padding: 0px 15px;
+}
+	.lathund p, .lathund h2 {
+		display: inline;
+	}
 
 .msg {
 	width: 300px;
@@ -555,13 +584,48 @@ p.readmore {
 	float: left;
 }
 
-.edit {
-	max-width: 700px;
-	margin: auto;
-	text-align: center;
-	background: #ccc;
-	}
+div.delete {
+	position: absolute;
+	top: -10px;
+	right: 0px;
+	width: 100px;
+	margin: 0px;
+	padding: 0px;
+}
 
+.button.del_button {
+	width: 80%;
+	padding: 7px;
+	background: #5e6062;
+	color: #fff;
+	font-family: 'Vollkorn', serif;
+	font-size: 16px;
+	border: 0px;
+	outline: none;
+}
+.button.del_button:hover {
+	color: #fff;
+	background: #e1455f;
+}
+.button.del_button:focus {
+	border: 0px;
+}
+.button.del_button:active {
+	position: relative;
+	top: 1px;
+}
+
+.place input {
+	width: 25px;
+	background: #fff;
+	color: #5e6062;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	border: 0px;
+	border-bottom: 7px #fff solid;
+	text-align: center;
+}
 
 /* FORMULÄR */
 
@@ -575,7 +639,10 @@ input, textarea {
 	font-size: 16px;
 	border: 0px;
 	border-bottom: 7px #5e6062 solid;
+	border-radius: 0;
 	outline: none;
+	-webkit-appearance: none;
+
 }
 
 input:focus, textarea:focus {
@@ -592,6 +659,7 @@ input:focus, textarea:focus {
 	font-size: 16px;
 	border: 0px;
 	outline: none;
+	-webkit-appearance: none;
 }
 .button:hover {
 	color: #fff;
