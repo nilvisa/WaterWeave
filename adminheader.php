@@ -1,6 +1,20 @@
 
 
-<?php include("server/funcs.php"); ?>
+<?php 
+
+session_start();
+
+if($_SESSION["login"] != 1) {
+	header("Location: login.php");
+    exit;
+}
+
+
+include("server/funcs.php");
+
+
+
+?>
 
 
 <!DOCTYPE html>
