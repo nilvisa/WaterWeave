@@ -30,7 +30,7 @@ include('adminheader.php');
 				<input type="text" name="title" placeholder="Titel"
 				value="<?php if(isset($_POST['title'])){ echo htmlentities($_POST['title']);} ?>">
 			</div>
-			<div class="inputdiv">
+			<div class="inputdiv file">
 				<input type="file" name="user_pic" value="Välj en bild (valfritt)">	<br>
 			</div>
 			<div class="inputdiv">

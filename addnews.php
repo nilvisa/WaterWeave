@@ -41,7 +41,7 @@ include('adminheader.php');
 			<textarea name="news" placeholder="Nyheten" rows="5" cols="22"><?php if(isset($_POST['news'])){ echo htmlentities($_POST['news']);} ?></textarea><br>
 		</div>
 
-		<div class="inputdiv">
+		<div class="inputdiv file">
 			<input type="file" name="news_pic">
 		</div>
 		
