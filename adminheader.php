@@ -1,6 +1,20 @@
 
 
-<?php include("server/funcs.php"); ?>
+<?php 
+
+session_start();
+
+if($_SESSION["login"] !== "1") {
+	header("Location: login.php");
+    exit;
+}
+
+
+include("server/funcs.php");
+
+
+
+?>
 
 
 <!DOCTYPE html>
@@ -27,6 +41,8 @@
 				<li> | </li>
 				<li><a href="adduser.php">ny i teamet</a></li>
 				<li><a href="edituser.php">redigera teamet</a></li>
+				<li> | </li>
+				<li><a href="logout.php">logga ut</a></li>
 			</ul>
 		</nav>
 	</div>

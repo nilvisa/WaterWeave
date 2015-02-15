@@ -1,6 +1,6 @@
 <?php
-$ttl = 10 * 60;
-session_set_cookie_params($ttl);
+
+
 session_start();
 
 
@@ -21,18 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if($myusername == $username && $mypassword == $password){
 
 
-		$_SESSION["login"] = true;
-		header("location:adminstart.php");
-		setcookie(session_name(), session_id(), time() + $ttl);
+		$_SESSION["login"] = "1";
+		header("location:addnews.php");
 
 
 	}
 	else {
 		echo "Fel användarnamn eller lösenord";
 	}
-
-
-
 
 }
 
