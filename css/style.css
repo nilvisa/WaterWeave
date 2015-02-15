@@ -561,8 +561,18 @@ p.readmore {
 		width: 95%;
 	}
 
-#knapp {
-	vertical-align: bottom;
+#edit_wrapper {
+	max-width: 1200px;
+	margin: 125px auto 0 auto;
+	text-align: center;
+}
+
+.edit {
+	position: relative;
+	width: 350px;
+	height: 800px;
+	float: left;
+	padding: 0px 25px 50px 25px;
 }
 
 .lathund {
@@ -586,15 +596,16 @@ p.readmore {
 
 div.delete {
 	position: absolute;
-	top: -10px;
+	top: -25px;
 	right: 0px;
-	width: 100px;
+	width: 350px;
 	margin: 0px;
-	padding: 0px;
+	padding-right: 15px;
+	text-align: right;
 }
 
 .button.del_button {
-	width: 80%;
+	width: 25%;
 	padding: 7px;
 	background: #5e6062;
 	color: #fff;
@@ -615,6 +626,10 @@ div.delete {
 	top: 1px;
 }
 
+.place {
+	text-align: right;
+}
+
 .place input {
 	width: 25px;
 	background: #fff;
@@ -625,6 +640,11 @@ div.delete {
 	border: 0px;
 	border-bottom: 7px #fff solid;
 	text-align: center;
+}
+
+.file input {
+	background: #fff;
+	color: #666;"
 }
 
 /* FORMULÄR */
@@ -653,6 +673,7 @@ input:focus, textarea:focus {
 .button {
 	width: 25%;
 	padding: 7px;
+	margin: 15px 5px 5px 5px;
 	background: #5e6062;
 	color: #fff;
 	font-family: 'Vollkorn', serif;

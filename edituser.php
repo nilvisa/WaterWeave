@@ -74,7 +74,7 @@ $user = getAll();
 					<textarea name="story" rows="7" cols="22">'.$user['story'].'</textarea>
 				</div>';
 
-				print '<div class="inputdiv">';
+				print '<div class="inputdiv file">';
 					if($user['user_pic']){
 						print '<input type="file" name="user_pic"> <img src="img/pers/'.$user['user_pic'].'" width="100px"><br>';
 					}
