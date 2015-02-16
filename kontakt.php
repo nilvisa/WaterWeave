@@ -4,7 +4,7 @@ include('header.php');
 $sandra = getPerson('13');
 $maria = getPerson('12');
 
-
+include('server/adminprofil.php'); //För att få mail-adressen som formuläret postar till.
 
 //följande kod är tagen från denna sida: http://www.formget.com/send-an-email-on-form-submission-using-php/
 $errormsg = "";
@@ -30,7 +30,7 @@ $headers .= 'Cc:'. $email . "\r\n"; // Carbon copy to Sender
 // Message lines should not exceed 70 characters (PHP rule), so wrap it
 $message = wordwrap($message, 70);
 // Send Mail By PHP Mail Function
-mail("hundenmarvin@gmail.com", $subject, $message, $headers);
+mail($yourmail, $subject, $message, $headers);
 $errormsg = "Ditt meddelande är skickat! Tack för din feedback";
 }
 }
