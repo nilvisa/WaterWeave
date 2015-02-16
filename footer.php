@@ -6,11 +6,16 @@ $maria = getPerson('12');
 ?>
 
 <html>
+
+<div id="footer_logga">
+	<img src="http://localhost/Skola/WaterWeave/img/head/logotyp_vector.png">
+</div>
+
 <div id="footer">
 	<div id="footermain">
 		
 		<div class="footertext left">
-			<p>WaterWeave</br>
+			<p><b>WaterWeave</br></b>
 			Vera Sandbergsallé 8</br>
 			412 96 Göteborg</p>
 		</div>
@@ -20,10 +25,10 @@ $maria = getPerson('12');
 		</div>
 
 		<div class="footertext right">
-			<p>Sandra Melin</br>
+			<p><b>Sandra Melin</b></br>
 			<?php print $sandra['tel']; ?> <br>
 
-			Maria Knutsson</br>
+			<b>Maria Knutsson</b></br>
 			<?php print $maria['tel']; ?></p>
 		</div>
 

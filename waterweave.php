@@ -2,10 +2,10 @@
 
 include('header.php');
 ?>
-
-<div id="headerimg"><img src="img/head/3_h.png"></div>
-<div class="wrap">
+<div class="wrap vit">
 	<div id="main">
+<div id="headerimg"><img src="img/head/3_h.png"></div>
+
 		<h1>waterweave</h1>
 		<div class="wwtext">
 			<p>

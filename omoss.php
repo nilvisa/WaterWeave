@@ -3,9 +3,10 @@
 include('header.php');
 
 $user = getAll();
-print '<div id="headerimg"><img src="img/head/4_h.png"></div>';
 
 print '<div id="main">';
+
+print '<div id="headerimg"><img src="img/head/4_h.png"></div>';
 
 print '<h1>teamet</h1>';
 

@@ -4,12 +4,14 @@ include('header.php');
 
 $news = getAllNews();
 
-print '<div id="headerimg"><img src="img/head/5_h.png"></div>';
 ?>
 
 
 <html>
+	<div class="wrap vit">
 	<div id="main">
+
+		<div id="headerimg"><img src="img/head/5_h.png"></div>
 
 	<h1>nyheter</h1>
 
@@ -76,7 +78,7 @@ foreach($news as $news)
 
 
 
-print '</div></div></body></html>';
+print '</div></div></div></body></html>';
 
 include('footer.php');
 
