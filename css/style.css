@@ -144,6 +144,14 @@ nav .currentLink{
 
 /*sidan börjar*/
 
+#main {
+	max-width: 780px;
+	margin: 0 auto;
+	padding: 0px 0px 150px 0px;
+	background: #e6e7e8;
+	/*text-align: center;*/
+}
+
 #headerimg {
 	width: 100%;
 	height: 200px;
@@ -154,28 +162,16 @@ nav .currentLink{
 		width: 100%;
 	}
 
-#imgflow {
-	height: 100%;
-}
 
-.wrap_inner {
-	position: relative;
-	width: 100%;
-}
+/* STARTSIDAN */
 
-div.headline {
-	position: relative;
-	top: 0px;
-	width: 50%;
-	height: 50%;
-	text-align: center;
-	font-family: 'Vollkorn', serif;
-	font-style: italic;
-	color: #fff;
-	font-size: 50px;
-	line-height: 45px;
+.blockering {
+	position: absolute;
+	height: 100px;
+	width: 15%;
+	background: #ff0;
+	margin: 0px 0px;
 }
-
 
 #vision {
 	width: 80%;
@@ -193,16 +189,6 @@ div.headline {
 	font-size: 20px;
 	line-height: 25px;
 }
-
-
-#main {
-	max-width: 780px;
-	margin: 0 auto;
-	padding: 0px 0px 150px 0px;
-	background: #e6e7e8;
-	/*text-align: center;*/
-}
-
 
 
 .start_col{
@@ -241,6 +227,79 @@ div.coltext p {
 		padding-left: 25px;
 		padding-right: 25px;
 	}
+
+
+/* STORA PILEN */
+
+.stor_wrap {
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 460px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #e6e7e8;
+  opacity: 1;
+  text-align: center;
+}
+
+.stor_wrap:before, .stor_wrap:after {
+  content:'';
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  background-color: inherit;
+  padding-bottom: 3%;
+  margin: 0px;
+}
+	.pil:before, .pil:after {
+		padding-bottom: 5%;
+	}
+	.fade:hover {
+		opacity: 0.7;
+	}
+
+.stor_wrap:before {
+  right: 50%;
+  -ms-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -ms-transform: skewX(60deg);
+  -webkit-transform: skewX(60deg);
+  transform: skewX(60deg);
+}
+.stor_wrap:after {
+  left: 50%;
+  -ms-transform-origin: 0 100%;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -ms-transform: skewX(-60deg);
+  -webkit-transform: skewX(-60deg);
+  transform: skewX(-60deg);
+}
+
+
+#imgflow {
+	height: 100%;
+	width: auto;
+	display: block;
+	text-align: center;
+	margin: 0px auto;
+}
+
+
+.headline {
+	position: absolute;
+	top: 230px;
+	width: 100%;
+	text-align: center;
+	font-family: 'Vollkorn', serif;
+	font-style: italic;
+	color: #fff;
+	font-size: 50px;
+	line-height: 45px;
+}
 
 
 /*footern*/
@@ -459,6 +518,7 @@ div.coltext p {
   margin: 0 auto;
   background-color: #e6e7e8;
   opacity: 1;
+  text-align: center;
 }
 
 .wrap.vit {
@@ -507,60 +567,6 @@ div.coltext p {
 }
 
 
-/* STORA PILEN */
-
-.stor_wrap {
-  position: relative;
-  top: 0px;
-  overflow: hidden;
-  width: 100%;
-  /*height: 470px;*/
-  margin: 0 auto;
-  padding: 0px;
-  background-color: #e6e7e8;
-  opacity: 1;
-}
-
-.stor_wrap img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.stor_wrap:before, .stor_wrap:after {
-  content:'';
-  position: absolute;
-  bottom: 0;
-  width: 50%;
-  background-color: inherit;
-  padding-bottom: 3%;
-  margin: 0px;
-}
-	.pil:before, .pil:after {
-		padding-bottom: 5%;
-	}
-	.fade:hover {
-		opacity: 0.7;
-	}
-
-.stor_wrap:before {
-  right: 50%;
-  -ms-transform-origin: 100% 100%;
-  -webkit-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-  -ms-transform: skewX(60deg);
-  -webkit-transform: skewX(60deg);
-  transform: skewX(60deg);
-}
-.stor_wrap:after {
-  left: 50%;
-  -ms-transform-origin: 0 100%;
-  -webkit-transform-origin: 0 100%;
-  transform-origin: 0 100%;
-  -ms-transform: skewX(-60deg);
-  -webkit-transform: skewX(-60deg);
-  transform: skewX(-60deg);
-}
 
 
 

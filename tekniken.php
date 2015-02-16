@@ -4,7 +4,7 @@ include('header.php');
 ?>
 	<div class="wrap vit">
 <div id="main">
-<div id="headerimg"><img src="img/head/4_h.png"></div>
+<div id="headerimg"><img src="img/head/2_h.png"></div>
 
 
 		<h1>tekniken</h1>

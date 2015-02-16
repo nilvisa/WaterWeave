@@ -1,20 +1,20 @@
 <?php include_once("header.php"); ?>
-<div class="wrap_inner">
-	<div class="stor_wrap">
-		<img src="img/head/1_h.png" id="imgflow">
-	</div>
 
-	<div class="headline">
-		Smarta textilier för<br>
-		ett rent dagvatten
-	</div>
+<div class="stor_wrap">
+	<img src="img/head/1_hhover.png" id="imgflow">
 </div>
 
-<div class="wrap vit">
+<!-- <div class="headline">
+	Smarta textilier för<br>
+	ett rent dagvatten
+</div> -->
+
+<div class="blockering"></div>
+<div class="blockering"></div>
+
+<div class="wrap vit">	
 <div id="main">
 	<br><br>
-
-
 
 	<div id="vision">
 		<h1>vår vision</h1>
@@ -48,12 +48,5 @@
 </div>
 </div>
 
-<script>
-var logoHeight = $('#imgflow img').height();
-    if (logoHeight < 104) {
-        var margintop = (104 - logoHeight) / 2;
-        $('#imgflow img').css('margin-top', margintop);
-    }
-</script>
 
 <?php include_once("footer.php");?>
