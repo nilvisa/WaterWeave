@@ -59,17 +59,17 @@ $news = getAllNews();
 					}
 					
 					print '<div id="knappar"><div class="knapp">
-						<input type="submit" name="addNews" value="Ändra" class="button">
-						</div>
-					</form>';
-
-				print '<div class="knapp">
 						<form method="post">
 							<input type="hidden" name="id" value="'.$news['news_id'].'">
 							<input type="hidden" name="name" value="'.$news['news_title'].'">
 							<input type="submit" name="delete" value="Radera" class="button del_button">
 						</form>
-					</div></div>';
+					</div>';
+
+					print '<div class="knapp">
+						<input type="submit" name="addNews" value="Ändra" class="button">
+						</div>
+					</form> </div>';
 			print '</div>';
 		}
 	}

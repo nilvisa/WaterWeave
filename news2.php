@@ -1,89 +1,126 @@
 <?php
 
-require_once('server/funcs.php');
+include('header.php');
 
 $news = getAllNews();
+
+print '<div id="headerimg"><img src="img/head/5_h.png"></div>';
 ?>
 
 
-<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link href="css/temp_style.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-</head>
-<body>
+	<div id="main">
+
+	<h1>nyheter</h1>
+
+	<div id="nyhet">	
+
+<div id="container">
+
+<div class="item">
+	<div class="wrap pil hvr-bubble-float-bottom">
+		<a href=""><img src="img/news/Vinnare%20Aff%C3%A4rsplan.jpg"></a>			
+	</div>	
 	
-	<div id="nyhet">
-		<?php		
-		if(isset($_GET['news']))
-		{
-			$news_id = ($_GET['news']);
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. est accusantium. 
+	<a href="news.php?news='.$news['news_id'].'">läs mer</a></p>
 
-				$nyhet = getNews($news_id);
+	<div class="border"></div>
+</div>
 
-				print mb_strtolower('<h1>'.$nyhet['news_title'].'</h1>', 'UTF-8');
-				print '<p>('.$nyhet['news_date'].')</p><br><br>';
-				print '<p>'.$nyhet['news'].'</p><br>';
-				print '<br><br>';
-
-				if($nyhet['news_pic'])
-				{
-					print '<img src="img/news/'.$nyhet['news_pic'].'">';			
-				}
-				
-				print '<div class="blue_bar"></div>';
-		}
-	print '</div>';
-
-	print '<div id="container">';
-
-
-foreach($news as $news)
-{
-	print '<div class="item">';
-		print '<div class="wrap">';
-
-		if($news['news_pic'])
-		{
-			print '<a href="news2.php?news='.$news['news_id'].'"><img src="img/news/'.$news['news_pic'].'"></a>';			
-		}
-		else
-		{
-			print '<a href="news2.php?news='.$news['news_id'].'"><img src="img/news/logo.png"></a>';
-		}
-
-		print '</div>';
-		print '<div class="arrow-down"></div>';		 
-
-		if(strlen($news['news']) > 100)
-		{
-			$sumNews = substr($news['news'], 0, 100).'...';
-			print '<p>'.$sumNews.' <a href="news2.php?news='.$news['news_id'].'">läs mer</a></p>';
-		}
-		else
-		{
-			print '<p>'.$news['news'].'</p>';
-		}
-
-		print '<div class="blue_bar"></div>';
-
-	print '</div>';
-
-
+<div class="item">
+	<div class="wrap pil hvr-wobble-bottom">
+		<a href=""><img src="img/news/Vinnare%20Aff%C3%A4rsplan.jpg"></a>			
+	</div>	
 	
-}
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. est accusantium. 
+	<a href="news.php?news='.$news['news_id'].'">läs mer</a></p>
+
+	<div class="border"></div>
+</div>
+
+<div class="item hvr-bubble-float-bottom">
+	<div class="wrap pil">
+		<a href=""><img src="img/news/Vinnare%20Aff%C3%A4rsplan.jpg"></a>			
+	</div>	
+	
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. est accusantium. 
+	<a href="news.php?news='.$news['news_id'].'">läs mer</a></p>
+
+	<div class="border"></div>
+</div>
+
+<div class="item">
+	<div class="wrap pil hvr-bob">
+		<a href=""><img src="img/news/Vinnare%20Aff%C3%A4rsplan.jpg"></a>			
+	</div>	
+	
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. est accusantium. 
+	<a href="news.php?news='.$news['news_id'].'">läs mer</a></p>
+
+	<div class="border"></div>
+</div>
+
+<div class="item">
+	<div class="wrap pil hvr-grow">
+		<a href=""><img src="img/news/Vinnare%20Aff%C3%A4rsplan.jpg"></a>			
+	</div>	
+	
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. est accusantium. 
+	<a href="news.php?news='.$news['news_id'].'">läs mer</a></p>
+
+	<div class="border"></div>
+</div>
+
+<div class="item">
+	<div class="wrap pil fade">
+		<a href=""><img src="img/news/Vinnare%20Aff%C3%A4rsplan.jpg"></a>			
+	</div>	
+	
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. est accusantium. 
+	<a href="news.php?news='.$news['news_id'].'">läs mer</a></p>
+
+	<div class="border"></div>
+</div>
+
+<div class="item">
+	<!-- <div class="border" style="top: 0px; height: 30px"> -->
+	<div class="wrap pil hvr-sink">
+		<a href=""><img src="img/news/Vinnare%20Aff%C3%A4rsplan.jpg"></a>			
+	</div>	
+	
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. est accusantium. 
+	<a href="news.php?news='.$news['news_id'].'">läs mer</a></p>
+
+	<div class="border"></div>
+</div>
+
+<div class="item">
+	<div class="wrap pil hvr-shrink">
+		<a href=""><img src="img/news/Vinnare%20Aff%C3%A4rsplan.jpg"></a>			
+	</div>	
+	
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. est accusantium. 
+	<a href="news.php?news='.$news['news_id'].'">läs mer</a></p>
+
+	<div class="border"></div>
+</div>
+
+<div class="item">
+	<div class="wrap pil hvr-bubble-float-bottom">
+		<a href=""><img src="img/news/Vinnare%20Aff%C3%A4rsplan.jpg"></a>			
+	</div>	
+	
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. est accusantium. 
+	<a href="news.php?news='.$news['news_id'].'">läs mer</a></p>
+
+	<div class="border"></div>
+</div>
 
 
+</div></div></body></html>
 
 
-print '</div></body></html>';
-
-?>
-
-<script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/masonry.pkgd.js"></script>
 <script scr="js/imagesloaded.pkgd.min.js"></script>
 

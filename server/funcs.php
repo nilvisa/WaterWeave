@@ -155,7 +155,7 @@ function addNews()
 							else
 							{
 								dbAdd("INSERT INTO news (news_title, news, news_date, news_pic)
-								VALUES('$news_title', '$news', '$eng_sum', '$news_date', '$pic_name')");
+								VALUES('$news_title', '$news', '$news_date', '$pic_name')");
 
 								print 'Du har nu lagt till nyheten "'.$news_title.'"';
 							}
