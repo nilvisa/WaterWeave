@@ -1,16 +1,16 @@
 <?php
 
-//include('header.php');
+include('header.php');
 
-//$sandra = getPerson('13');
-//$maria = getPerson('12');
+$sandra = getPerson('13');
+$maria = getPerson('12');
 
 
-
+//följande kod är tagen från denna sida: http://www.formget.com/send-an-email-on-form-submission-using-php/
 if(isset($_POST["submit"])){
 // Checking For Blank Fields..
 if($_POST["vname"]==""||$_POST["vemail"]==""||$_POST["sub"]==""||$_POST["msg"]==""){
-echo "Fill All Fields..";
+echo "Fyll i alla fält..";
 }else{
 // Check if the "Sender's Email" input field is filled out
 $email=$_POST['vemail'];
@@ -19,7 +19,7 @@ $email =filter_var($email, FILTER_SANITIZE_EMAIL);
 // Validate E-mail Address
 $email= filter_var($email, FILTER_VALIDATE_EMAIL);
 if (!$email){
-echo "Invalid Sender's Email";
+echo "Avsändarens e-mail är ogiltig";
 }
 else{
 $subject = $_POST['sub'];
@@ -30,7 +30,7 @@ $headers .= 'Cc:'. $email . "\r\n"; // Carbon copy to Sender
 $message = wordwrap($message, 70);
 // Send Mail By PHP Mail Function
 mail("hundenmarvin@gmail.com", $subject, $message, $headers);
-echo "Your mail has been sent successfuly ! Thank you for your feedback";
+echo "Ditt meddelande är skickat! Tack för din feedback";
 }
 }
 }
@@ -48,9 +48,9 @@ echo "Your mail has been sent successfuly ! Thank you for your feedback";
 			<h3>Adress</h3>
 			<p>Vera Sandbergsallé 8</br>412 96 Göteborg</p>
 			<h3>Sandra Melin</h3>
-			<p><?php //print $sandra['tel']; ?></br>sandra@waterweave.se</p>
+			<p><?php print $sandra['tel']; ?></br>sandra@waterweave.se</p>
 			<h3>Maria Knutsson</h3>
-			<p><?php //print $maria['tel']; ?></br>maria@waterweave.se</p>
+			<p><?php print $maria['tel']; ?></br>maria@waterweave.se</p>
 			</div>
 			<img id="kontaktimg" src="img/14_s-png.png">
 		</div>
@@ -83,6 +83,6 @@ echo "Your mail has been sent successfuly ! Thank you for your feedback";
 
 
 <?php
-//include('footer.php');
+include('footer.php');
 
 ?>
