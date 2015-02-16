@@ -25,7 +25,7 @@ include('header.php');
 		</div>
 		<div class="teknik_img">
 			<img src="img/8_s.png">
-			<img src="img/IMG_9114.jpg"><!-- motsvarande returscherad bild saknas -->
+			<img src="img/9_s.png">
 		</div>
 		
 
