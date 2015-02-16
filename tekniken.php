@@ -2,10 +2,11 @@
 
 include('header.php');
 ?>
-
+	<div class="wrap vit">
+<div id="main">
 <div id="headerimg"><img src="img/head/4_h.png"></div>
-<div class="wrap">
-	<div id="main">
+
+
 		<h1>tekniken</h1>
 		<div class="wwtext">
 			<p>

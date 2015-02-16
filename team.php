@@ -3,9 +3,10 @@
 include('header.php');
 
 $user = getAll();
-print '<div id="headerimg"><img src="img/head/4_h.png"></div>';
 
-print '<div id="main">';
+print '<div class="wrap vit"><div id="main">';
+
+print '<div id="headerimg"><img src="img/head/4_h.png"></div>';
 
 print '<h1>teamet</h1>';
 
@@ -28,8 +29,9 @@ foreach($user as $user)
 		
 	print '</div>';
 }
-print '</div>';
-print '<div style="clear: both"></div>';
+
+print '<div style="clear: both"></div>
+	</div></div>';
 
 
 
