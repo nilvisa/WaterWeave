@@ -11,7 +11,7 @@
 		<p>WaterWeave vill göra skillnad för miljön och öka tillgången på rent dagvatten. WaterWeave gör detta genom att utveckla smarta textilier för dagvattenrening. Genom att kombinera biomassa med textil möjliggör tekniken effektivt upptag av tungmetalljoner i vatten.</p>
 	</div>
 
-	<div id="start_col">
+	<div class="start_col">
 		<img src="img/1_s.png">
 		<div class="coltext">
 			<h1>waterweave</h1>
@@ -22,7 +22,7 @@
 		</div>		
 	</div>
 
-	<div id="start_col">
+	<div class="start_col">
 		<img src="img/2_s.png">
 		<div class="coltext">
 			<h1>tekniken</h1>

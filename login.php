@@ -13,28 +13,6 @@ include("server/funcs.php");
 include("server/adminprofil.php");
 
 
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	
-	$myusername = $_POST['myusername'];
-	$mypassword = $_POST['mypassword'];
-
-
-
-	if($myusername == $username && $mypassword == $password){
-
-
-		$_SESSION["login"] = "1";
-		header("location:addnews.php");
-
-
-	}
-	else {
-		echo "Fel användarnamn eller lösenord";
-	}
-
-}
-
 ?>
 
 
@@ -54,6 +32,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 	<div id="formdiv">
 		<h1>logga in som admin</h1>
+
+<?php
+
+		if ($_SERVER["REQUEST_METHOD"] == "POST") 
+		{	
+			$myusername = $_POST['myusername'];
+			$mypassword = $_POST['mypassword'];
+
+			if($myusername == $username && $mypassword == $password){
+
+			$_SESSION["login"] = "1";
+			header("location:addnews.php");
+			}
+			else 
+			{
+				print '<div class="msg stor">';
+				echo "Fel användarnamn eller lösenord";
+				print '</div><div class="clearfix"></div>';
+			}
+	}
+?>
 
 		<form action="login.php" method="post">
 			<div class="inputdiv">

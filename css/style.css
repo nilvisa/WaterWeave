@@ -145,15 +145,6 @@ nav .currentLink{
 		margin-bottom: 35px;
 	}
 
-.start_col{
-	width:50%;
-	float:left;
-}
-
-.start_col img {
-	width: 90%;
-}
-
 #vision h1 {
 	color:#33ccff;
 	font-family: "open sans", sans-serif;
@@ -172,6 +163,16 @@ nav .currentLink{
 	text-align: center;
 	line-height:32px;
 	margin-bottom:50px;
+}
+
+.start_col{
+	width:50%;
+	float:left;
+	text-align: center;
+}
+
+.start_col img {
+	width: 90%;
 }
 
 .coltext {
