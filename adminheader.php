@@ -1,5 +1,3 @@
-
-
 <?php 
 $ttl = 60 * 60; //TimeToLive - för sessionen. 60*60 alltså en timma.
 session_set_cookie_params($ttl);
@@ -9,19 +7,17 @@ if($_SESSION["login"] !== "1") {
 	header("Location: login.php");
     exit;
 }
-else{
-	setcookie(session_name(), session_id(), time() + $ttl);
-	//Login-sessionen får leva i en timma efter att en sida laddas.
-	//Såvida det inte är Chrome som tycks strunta i detta totalt.
-}
+
+
+setcookie(session_name(), session_id(), time() + $ttl, "/");
+//Login-sessionen får leva i en timma efter att en sida laddas.
+//Såvida det inte är Chrome som tycks strunta i detta totalt.
 
 include("server/funcs.php");
 
 
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
