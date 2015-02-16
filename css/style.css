@@ -525,6 +525,11 @@ p.readmore {
 
 /* ADMINSIDAN */
 
+#logout {
+	position: absolute;
+	top: 53px;
+	right: 20px;
+}
 
 #main_admin {
 	max-width: 724px;
@@ -573,6 +578,7 @@ p.readmore {
 	height: 800px;
 	float: left;
 	padding: 0px 25px 50px 25px;
+	text-align: center;
 }
 
 .lathund {
@@ -594,6 +600,18 @@ p.readmore {
 	float: left;
 }
 
+.knapp {
+	width: 120px;
+	float: left;
+	margin: 12px;
+}
+
+#knappar {
+	width: 300px;
+	margin: 0px 30px;
+}
+
+
 div.delete {
 	position: absolute;
 	top: -25px;
@@ -605,7 +623,6 @@ div.delete {
 }
 
 .button.del_button {
-	width: 25%;
 	padding: 7px;
 	background: #5e6062;
 	color: #fff;
@@ -671,7 +688,7 @@ input:focus, textarea:focus {
 }
 
 .button {
-	width: 25%;
+	width: 110px;
 	padding: 7px;
 	margin: 15px 5px 5px 5px;
 	background: #5e6062;
