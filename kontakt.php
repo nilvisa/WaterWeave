@@ -44,16 +44,16 @@ $errormsg = "Ditt meddelande är skickat! Tack för din feedback";
 		<h1>kontakt</h1>
 		<div class="kontakt2col">
 			
-			<br><br>
-			<h3>Adress</h3>
+			<br>
+			<h3>adress</h3>
 			<p>Vera Sandbergsallé 8</br>412 96 Göteborg</p>
 			<br><br>
 
-			<h3>Sandra Melin</h3>
+			<h3>sandra melin</h3>
 			<p><?php print $sandra['tel']; ?></br>sandra@waterweave.se</p>
 			<br><br>
 
-			<h3>Maria Knutsson</h3>
+			<h3>maria knutsson</h3>
 			<p><?php print $maria['tel']; ?></br>maria@waterweave.se</p>
 		</div>
 		<div class="kontakt2col">

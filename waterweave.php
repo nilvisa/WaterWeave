@@ -51,9 +51,9 @@ include('header.php');
 		</div>
 		
 
-		<p class="italic">
+		<p><i>
 		WaterWeave söker för tillfället partners som är intresserade av att delta i utvecklingen. Ytterligare expertis och kontakter inom området för vattenrening samt möjlighet till ekonomiskt stöd är av stort intresse. Vänligen kontakta oss om du eller någon du känner delar vårt engagemang för vattenrening med hjälp av smarta textiler.
-		</p>
+		</i></p>
 		
 	</div>
 
