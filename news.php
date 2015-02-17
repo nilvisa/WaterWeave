@@ -8,14 +8,14 @@ $news = getAllNews();
 
 
 <html>
-	<div class="wrap vit">
+	
 	<div id="main">
 
 		<div id="headerimg"><img src="img/head/5_h.png"></div>
 
-	<h1>nyheter</h1>
+		<h1>nyheter</h1>
 
-	<div id="nyhet">
+		<div id="nyhet">
 
 		<?php		
 		if(isset($_GET['news']))
@@ -55,7 +55,7 @@ foreach($news as $news)
 		}
 
 		print '</div>';
-		print '<div class="arrow-down"></div>';
+
 		
 		if(strlen($news['news']) > 110)
 		{
@@ -75,10 +75,11 @@ foreach($news as $news)
 	
 }
 
-
-
-
-print '</div></div></div></body></html>';
+print '</div></div></div>
+	<div class="wrap vit">
+		<div id="main2"></div>
+	</div>
+</body></html>';
 
 include('footer.php');
 

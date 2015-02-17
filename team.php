@@ -4,7 +4,7 @@ include('header.php');
 
 $user = getAll();
 
-print '<div class="wrap vit"><div id="main">';
+print '<div id="main">';
 
 print '<div id="headerimg"><img src="img/head/4_h.png"></div>';
 
@@ -32,6 +32,10 @@ foreach($user as $user)
 
 print '<div style="clear: both"></div>
 	</div></div>';
+
+print '	<div class="wrap vit">
+		<div id="main2"></div>
+	</div>';
 
 
 

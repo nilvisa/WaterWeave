@@ -38,46 +38,58 @@ $errormsg = "Ditt meddelande är skickat! Tack för din feedback";
  
 ?>
 
-
-
-<div id="headerimg"><img src="img/head/4_h.png"></div>
-<div class="wrap">
 	<div id="main">
+		<div id="headerimg"><img src="img/head/6_h.png"></div>
 
 		<h1>kontakt</h1>
 		<div class="kontakt2col">
-			<div id="kontaktadresser">
-				<h3>Adress</h3>
-				<p>Vera Sandbergsallé 8</br>412 96 Göteborg</p>
-				<h3>Sandra Melin</h3>
-				<p><?php print $sandra['tel']; ?></br>sandra@waterweave.se</p>
-				<h3>Maria Knutsson</h3>
-				<p><?php print $maria['tel']; ?></br>maria@waterweave.se</p>
-			</div>
-			<img id="kontaktimg" src="img/14_s-png.png">
+			
+			<br><br>
+			<h3>Adress</h3>
+			<p>Vera Sandbergsallé 8</br>412 96 Göteborg</p>
+			<br><br>
+
+			<h3>Sandra Melin</h3>
+			<p><?php print $sandra['tel']; ?></br>sandra@waterweave.se</p>
+			<br><br>
+
+			<h3>Maria Knutsson</h3>
+			<p><?php print $maria['tel']; ?></br>maria@waterweave.se</p>
+		</div>
+		<div class="kontakt2col">
+			<img src="img/14_s-png.png">
 		</div>
 
-		<p><?php print $errormsg; ?></p>
-		<form action="kontakt.php" method="post" name="form">
-			<div class="inputdiv">
-				<input type="text" name="vname" placeholder="Namn">
-			</div>
-			<div class="inputdiv">
-				<input type="text" name="vemail" placeholder="E-mail">
-			</div>
-			<div class="inputdiv">
-				<input type="text" name="sub" placeholder="Ämne">
-			</div>
-			<div class="inputdiv">
-				<textarea name="msg" placeholder="Skriv din text här..."></textarea>
-			</div>
-			<div style="clear: both"></div>
-			<br>
-			<input type="submit" value="skicka" class="button" name="submit">
-		</form>
+		<div class="clearfix"></div>
+
+		
+		<div id="kontaktform">
+			<p><?php print $errormsg; ?></p>
+			<form action="kontakt.php" method="post" name="form">
+				<div class="inputdiv">
+					<input type="text" name="vname" placeholder="Namn">
+				</div>
+				<div class="inputdiv">
+					<input type="text" name="vemail" placeholder="E-mail">
+				</div>
+				<div class="inputdiv">
+					<input type="text" name="sub" placeholder="Ämne">
+				</div>
+				<div class="inputdiv">
+					<textarea name="msg" placeholder="Skriv din text här..." rows="5"></textarea>
+				</div>
+				<div style="clear: both"></div>
+				<br>
+				<input type="submit" value="skicka" class="button" name="submit">
+			</form>
+		</div>
 
 	</div>
 </div>
+
+<div class="wrap vit">
+		<div id="main2"></div>
+	</div>
 
 
 

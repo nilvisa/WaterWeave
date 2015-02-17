@@ -1,18 +1,15 @@
 <?php include_once("header.php"); ?>
 
 <div class="stor_wrap">
-	<img src="img/head/1_hhover.png" id="imgflow">
+	<img src="img/head/1_h2.png" id="imgflow">
 </div>
 
-<!-- <div class="headline">
+<div class="headline">
 	Smarta textilier för<br>
 	ett rent dagvatten
-</div> -->
+</div>
 
-<div class="blockering"></div>
-<div class="blockering"></div>
 
-<div class="wrap vit">	
 <div id="main">
 	<br><br>
 
@@ -46,7 +43,10 @@
 	<div class="clearfix"></div>
 
 </div>
-</div>
+	<div class="wrap vit">
+		<div id="main2"></div>
+	</div>
+
 
 
 <?php include_once("footer.php");?>
