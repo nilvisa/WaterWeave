@@ -681,18 +681,18 @@ div.coltext p {
 
 #logout {
 	position: absolute;
-	top: 53px;
+	top: 0px;
 	right: 20px;
 }
 
 #main_admin {
 	max-width: 724px;
-	margin: 85px auto;
+	margin: 25px auto 100px auto;
 }
 
 #formdiv {
 	max-width: 700px;
-	margin: 125px auto;
+	margin: 40px auto 100px auto;
 	text-align: center;
 	padding: 0 30px;
 }
@@ -722,16 +722,16 @@ div.coltext p {
 
 #edit_wrapper {
 	max-width: 1200px;
-	margin: 125px auto 0 auto;
+	margin: 25px auto 0 auto;
 	text-align: center;
 }
 
 .edit {
 	position: relative;
 	width: 350px;
-	height: 800px;
+	height: 770px;
 	float: left;
-	padding: 0px 25px 50px 25px;
+	padding: 25px;
 	text-align: center;
 }
 
@@ -784,8 +784,6 @@ div.delete {
 	padding: 7px;
 	background: #5e6062;
 	color: #fff;
-	font-family: Vollkorn, 'Vollkorn', serif;
-	font-size: 16px;
 	border: 0px;
 	outline: none;
 }
