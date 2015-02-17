@@ -8,7 +8,7 @@ $maria = getPerson('12');
 <html>
 
 <div id="footer_logga">
-	<img src="http://localhost/Skola/WaterWeave/img/head/logotyp_vector.png">
+	<img src="img/head/logotyp_vector.png">
 </div>
 
 <div id="footer">
