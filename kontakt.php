@@ -6,35 +6,6 @@ $maria = getPerson('12');
 
 include('server/adminprofil.php'); //För att få mail-adressen som formuläret postar till.
 
-//följande kod är tagen från denna sida: http://www.formget.com/send-an-email-on-form-submission-using-php/
-$errormsg = "";
-if(isset($_POST["submit"])){
-// Checking For Blank Fields..
-if($_POST["vname"]==""||$_POST["vemail"]==""||$_POST["sub"]==""||$_POST["msg"]==""){
-$errormsg = "Fyll i alla fält..";
-}else{
-// Check if the "Sender's Email" input field is filled out
-$email=$_POST['vemail'];
-// Sanitize E-mail Address
-$email =filter_var($email, FILTER_SANITIZE_EMAIL);
-// Validate E-mail Address
-$email= filter_var($email, FILTER_VALIDATE_EMAIL);
-if (!$email){
-$errormsg = "Avsändarens e-mail är ogiltig";
-}
-else{
-$subject = $_POST['sub'];
-$message = $_POST['msg'];
-$headers = 'From:'. $email . "\r\n"; // Sender's Email
-$headers .= 'Cc:'. $email . "\r\n"; // Carbon copy to Sender
-// Message lines should not exceed 70 characters (PHP rule), so wrap it
-$message = wordwrap($message, 70);
-// Send Mail By PHP Mail Function
-mail($yourmail, $subject, $message, $headers);
-$errormsg = "Ditt meddelande är skickat! Tack för din feedback";
-}
-}
-}
  
 ?>
 
@@ -64,19 +35,21 @@ $errormsg = "Ditt meddelande är skickat! Tack för din feedback";
 
 		
 		<div id="kontaktform">
-			<p><?php print $errormsg; ?></p>
-			<form action="kontakt.php" method="post" name="form">
+			<form action="http://formmail.loopia-waterweave.se" method="post" name="form">
+				<input type="hidden" name="recipient" value="<?php print $yourmail; ?>">
+				<input type="hidden" name="redirect" 
+  					value="mailsubmit.php">
 				<div class="inputdiv">
-					<input type="text" name="vname" placeholder="Namn">
+					<input type="text" name="name" placeholder="Namn">
 				</div>
 				<div class="inputdiv">
-					<input type="text" name="vemail" placeholder="E-mail">
+					<input type="text" name="email" placeholder="E-mail">
 				</div>
 				<div class="inputdiv">
-					<input type="text" name="sub" placeholder="Ämne">
+					<input type="text" name="subject" placeholder="Ämne">
 				</div>
 				<div class="inputdiv">
-					<textarea name="msg" placeholder="Skriv din text här..." rows="5"></textarea>
+					<textarea name="body" placeholder="Skriv din text här..." rows="5"></textarea>
 				</div>
 				<div style="clear: both"></div>
 				<br>
