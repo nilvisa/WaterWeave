@@ -25,10 +25,8 @@ $maria = getPerson('12');
 		</div>
 
 		<div class="footertext right">
-			<p><b>Sandra Melin</b></br>
-			<?php print $sandra['tel']; ?> <br>
-
-			<b>Maria Knutsson</b></br>
+			<b><p>Kontakt</b></br>
+			info@waterweave.se <br>
 			<?php print $maria['tel']; ?></p>
 		</div>
 

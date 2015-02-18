@@ -410,6 +410,7 @@ div.coltext p {
 	text-align: center;
 	font-size: 13px;
 	line-height: 14px;
+	margin-top: 5px;
 	color: #fff;
 }
 
@@ -421,7 +422,7 @@ div.coltext p {
 	}
 
 #footermain .footertext {
-	width: 160px;
+	width: 180px;
 	margin: auto 10px;
 	display: inline-block;
 	vertical-align: middle;
@@ -497,13 +498,13 @@ div.coltext p {
 
 #illustration {
 	width: 500px;
-	margin: 50 auto 35px auto;
-	padding: 50px;
+	margin: 35px auto;
 	text-align: center;
 }
 
 #illustration img {
 	width: 100%;
+	text-align: center;
 }
 
 .teknik_img img {
