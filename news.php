@@ -41,7 +41,7 @@ $news = getAllNews();
 foreach($news as $news)
 {
 	print '<div class="item">';
-		print '<div class="wrap pil">';
+		print '<div class="wrap pil hvr-grow">';
 
 		if($news['news_pic'])
 		{

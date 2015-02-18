@@ -19,7 +19,7 @@
 	</div>
 
 	<div class="start_col">
-		<img src="img/1_s.png">
+		<a href="waterweave.php"><img src="img/1_s.png"></a>
 		<div class="coltext">
 			<h2>waterweave</h2><br>
 			<p>WaterWeave är ett Göteborgsbaserat<br> start-up som utvecklar ett textilbaserad<br> vattenreningssystem för rening av<br> dagvatten.</p>
@@ -30,7 +30,7 @@
 	</div>
 
 	<div class="start_col">
-		<img src="img/2_s.png">
+		<a href="tekniken.php"><img src="img/2_s.png"></a>
 		<div class="coltext">
 			<h2>tekniken</h2><br>
 			<p>WaterWeave arbetar med att ta fram ett<br> textilbaserat vattenreningssystem som<br> bygger på biologisk rening, en ide som<br> ursprungligen kommer från<br> Textilhögskolan i Borås.</p>

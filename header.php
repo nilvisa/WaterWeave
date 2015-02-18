@@ -9,7 +9,6 @@
 	<meta charset="UTF-8">
 	<title>WaterWeave</title>
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
-	<link href="css/hover.css" type="text/css" rel="stylesheet" />
 	<link rel="icon" href="img/head/favicon.ico" type="image/ico" sizes="17x17">
 	<script src="js/jquery-1.11.2.min.js"></script>
 </head>
