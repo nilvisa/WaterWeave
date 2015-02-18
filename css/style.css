@@ -462,7 +462,7 @@ div.coltext p {
 }
 
 .waterweave p {
-	width: 90%;
+	width: 80%;
 	margin: 25px auto;
 	text-align: left
 }
@@ -472,7 +472,7 @@ div.coltext p {
 #illustration {
 	width: 500px;
 	margin: 50 auto 35px auto;
-	/*padding: 50px;*/
+	padding: 50px;
 	text-align: center;
 }
 

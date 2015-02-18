@@ -1,6 +1,6 @@
 <?php include_once("header.php"); ?>
 
-<div class="stor_wrap">
+<div class="stor_wrap vit">
 	<img src="img/head/1_h2.png" id="imgflow">
 </div>
 
