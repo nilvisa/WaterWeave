@@ -3,8 +3,10 @@
 include('header.php');
 ?>
 
-<div id="main" class="waterweave">
 <div id="headerimg"><img src="img/head/2_h.png"></div>
+
+
+<div id="main" class="waterweave">
 
 
 		<h1>tekniken</h1>
@@ -47,9 +49,10 @@ include('header.php');
 		
 
 </div>
-<div class="wrap vit">
+
+<!-- <div class="wrap vit">
 	<div id="main2"></div>
-</div>
+</div> -->
 
 
 <?php
