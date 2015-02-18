@@ -5,14 +5,15 @@
 </div>
 
 <div class="headline">
-	Smarta textilier för<br>
-	ett rent dagvatten
+	<p>Smarta textilier för<br>
+	ett rent dagvatten</p>
 </div>
 
 
 <div id="main">
-	<br><br>
+	<div class="arrow-down"></div>
 
+<br>
 	<div id="vision">
 		<h1>vår vision</h1>
 		<p>WaterWeave vill göra skillnad för miljön och öka tillgången på rent dagvatten. WaterWeave gör detta genom att utveckla smarta textilier för dagvattenrening. Genom att kombinera biomassa med textil möjliggör tekniken effektivt upptag av tungmetalljoner i vatten.</p>
