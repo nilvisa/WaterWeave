@@ -395,6 +395,10 @@ div.coltext p {
     transition: 0.6s ease-in-out;
 }
 
+div#start_kontakt {
+		display: none;
+	}
+
 
 /*footern*/
 
@@ -440,9 +444,66 @@ div.coltext p {
 }
 
 
-
 /*den responsiva delen*/
-@media screen and (max-width: 740px) 	{
+@media only screen and (max-width: 750px) 	{
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	h3{
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+	div#header {
+	}
+	
+	div#headermain {
+		width: 100%;
+	}
+
+	div#stopmain {
+		width: 100%;
+	}
+
+	div.headline {
+		top: 180px;
+	}
+
+	div.headline p{
+		font-size: 50px;
+		line-height: 40px;
+	}
+
+	div#main {
+		width: 100%;
+	}
+
+	.start_col {
+		width: 100%;
+		margin: 0px auto 50px auto;
+	}
+
+	div#start_kontakt {
+		display: block;
+		text-align: center;
+	}
+
+	div#headerimg {
+		height: auto;
+	}
+
+	div.wwimg img {
+		width: 60%;
+	}
+
 	#waterweave {
 		width: 100%;
 	}
@@ -450,12 +511,53 @@ div.coltext p {
 		width: 100%;
 	}
 
+	div#illustration {
+		width: 80%;
+	}
+
+	div.team {
+		width: 80%;
+		margin: 33px;
+	}
+
+	div.team img{
+		width: 45%;
+	}
+
+	div#nyhet {
+		width: 100%;
+	}
+
+	div.news_img {
+		width: 100%;
+	}
+
+	div#container {
+		width: 100%;
+	}
+
+	div.item {
+		width: 45%;
+		margin: 0px 5px 0px 5px;
+	}
+
+	div.kontakt2col {
+		width: 100%;
+		margin: 30px 10px;
+	}
+
+	div.kontakt2col img{
+		width: 70%;
+		margin: 30px 40px;
+	}
+
 	.left, .right {
 		display: none !important;
 	}
 
 	#footermain {
-		width:181px;
+		max-width: 181px;
+		width: 200px;
 	}
 
 	#footer {
@@ -463,7 +565,7 @@ div.coltext p {
 	}
 
 	.footertext{
-		padding-top: 5px;
+		padding-left: -10px;
 	}
 
 }
