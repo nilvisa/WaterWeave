@@ -7,10 +7,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
 	<title>WaterWeave</title>
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 	<link rel="icon" href="img/head/favicon.ico" type="image/ico" sizes="17x17">
 	<script src="js/jquery-1.11.2.min.js"></script>
+	<link href="css/fonts/"
 </head>
 <body>
 

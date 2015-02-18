@@ -456,7 +456,7 @@ div.coltext p {
 /*den responsiva delen*/
 @media only screen and (max-width: 750px) 	{
 	h1 {
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	h2 {
@@ -468,26 +468,30 @@ div.coltext p {
 	}
 
 	p {
-		font-size: 18px;
+		font-size: 15px;
+	}
+
+	div#header {
 	}
 	
 	div#headermain {
 		width: 100%;
-		max-width: 300px;
 	}
 
 	div#stopmain {
 		width: 100%;
-		max-width: 300px;
 	}
 
 	div.headline {
-		top: 350px;
+		top: 180px;
 	}
 
+	div.headline p{
+		font-size: 50px;
+		line-height: 40px;
+	}
 
 	div#main {
-		max-width: 100%;
 		width: 100%;
 	}
 
@@ -501,8 +505,12 @@ div.coltext p {
 		text-align: center;
 	}
 
+	div#headerimg {
+		height: auto;
+	}
+
 	div.wwimg img {
-		width: 300px;
+		width: 60%;
 	}
 
 	#waterweave {
@@ -512,8 +520,13 @@ div.coltext p {
 		width: 100%;
 	}
 
+	div#illustration {
+		width: 80%;
+	}
+
 	div.team {
 		width: 80%;
+		margin: 33px;
 	}
 
 	div.team img{
@@ -534,7 +547,7 @@ div.coltext p {
 
 	div.item {
 		width: 45%;
-		margin: 0px 10px 0px 10px;
+		margin: 0px 5px 0px 5px;
 	}
 
 	div.kontakt2col {
@@ -543,8 +556,8 @@ div.coltext p {
 	}
 
 	div.kontakt2col img{
-		width: 80%;
-		margin: 30px 20px;
+		width: 70%;
+		margin: 30px 40px;
 	}
 
 	.left, .right {
@@ -561,7 +574,7 @@ div.coltext p {
 	}
 
 	.footertext{
-		padding-top: 5px;
+		padding-left: -10px;
 	}
 
 }
