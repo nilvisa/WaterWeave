@@ -4,16 +4,17 @@ include('header.php');
 
 $news = getAllNews();
 
-print '<div id="headerimg"><img src="img/head/5_h.png"></div>';
 ?>
 
 
 <html>
 	<div id="main">
 
-	<h1>nyheter</h1>
+		<div id="headerimg"><img src="img/head/5_h.png"></div>
 
-	<div id="nyhet">	
+		<h1>nyheter</h1>
+
+		<div id="nyhet">	
 
 <div id="container">
 

@@ -4,7 +4,8 @@ include('header.php');
 ?>
 
 <div id="main" class="waterweave">
-<div id="headerimg"><img src="img/head/2_h.png"></div>
+
+	<div id="headerimg"><img src="img/head/2_h.png"></div>
 
 
 		<h1>tekniken</h1>
@@ -47,6 +48,7 @@ include('header.php');
 		
 
 </div>
+
 <div class="wrap vit">
 	<div id="main2"></div>
 </div>
