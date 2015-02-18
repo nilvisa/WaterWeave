@@ -126,7 +126,6 @@ b {
 	margin: 3px auto;
 	max-width: 780px;
 	padding: 0px;
-	background: #ff0;
 }
 
 #logga {
@@ -204,10 +203,9 @@ nav .currentLink{
 /*sidan börjar*/
 
 #main {
-	max-width: 780px;
+	max-width: 900px;
 	margin: -2px auto 0px auto;
 	padding: 0px 0px 20px 0px;
-	background: #e6e7e8;
 	/*text-align: center;*/
 }
 
@@ -217,7 +215,7 @@ nav .currentLink{
 	height: 175px;
 	margin: 0px;
 	overflow: hidden;
-	padding: 0px;
+	padding-bottom: 25px;
 }
 	#headerimg img{ 
 		width: 100%;
@@ -225,16 +223,6 @@ nav .currentLink{
 
 
 /* STARTSIDAN */
-
-.arrow-down {
-	width: 0px; 
-	height: 0px; 
-	border-left: 79px solid transparent;
-	border-right: 79px solid transparent;
-	
-	border-top: 49px solid #fff;
-	margin: 0px auto;
-}
 
 #vision {
 	width: 80%;
@@ -247,7 +235,7 @@ nav .currentLink{
 }
 
 #vision p {
-	font-family: Vollkorn, 'Vollkorn', sans-serif;
+	font-family: open_sans, 'Open Sans', sans-serif;
 	text-align: center;
 	font-size: 20px;
 	line-height: 25px;
@@ -387,14 +375,7 @@ div.coltext p {
 
 /*footern*/
 
-#main2 {
-	max-width: 780px;
-	height: 100px;
-	margin: -2px auto 0px auto;
-	padding: 0px;
-	background: #e6e7e8;
-	/*text-align: center;*/
-}
+
 
 #footer {
 	position: relative;
@@ -410,6 +391,7 @@ div.coltext p {
 	text-align: center;
 	font-size: 13px;
 	line-height: 14px;
+	margin-top: 5px;
 	color: #fff;
 }
 
@@ -421,20 +403,10 @@ div.coltext p {
 	}
 
 #footermain .footertext {
-	width: 160px;
+	width: 180px;
 	margin: auto 10px;
 	display: inline-block;
 	vertical-align: middle;
-}
-
-#footer_logga {
-	width: 150px;
-	text-align: center;
-	margin: 15px auto 20px auto;
-}
-
-#footer_logga img{
-	width: 100%;
 }
 
 
@@ -493,17 +465,18 @@ div.coltext p {
 	text-align: left
 }
 
+
 /*teknik-sidan*/
 
 #illustration {
 	width: 500px;
-	margin: 50 auto 35px auto;
-	padding: 50px;
+	margin: 35px auto;
 	text-align: center;
 }
 
 #illustration img {
 	width: 100%;
+	text-align: center;
 }
 
 .teknik_img img {
@@ -518,13 +491,13 @@ div.coltext p {
 /* TEAMSIDAN */
 
 .team {
-	width: 290px;
+	width: 320px;
 	margin: 33px 0 33px 66px;
 	float: left;
 	text-align: center;
 }
 	.team img {
-		width: 170px;
+		width: 200px;
 		margin: 0 auto 35px auto;
 		padding: 0px;
 	}
@@ -639,7 +612,7 @@ div.coltext p {
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  background-color: #e6e7e8;
+  background-color: #fff;
   opacity: 1;
   text-align: center;
 }

@@ -8,10 +8,8 @@ include('server/adminprofil.php'); //För att få mail-adressen som formuläret 
 
  
 ?>
-
+	<div id="headerimg"><img src="img/head/6_h.png"></div>
 	<div id="main">
-		<div id="headerimg"><img src="img/head/6_h.png"></div>
-
 		<h1>kontakt</h1>
 		<div class="kontakt2col">
 			
@@ -59,10 +57,6 @@ include('server/adminprofil.php'); //För att få mail-adressen som formuläret 
 
 	</div>
 </div>
-
-<div class="wrap vit">
-		<div id="main2"></div>
-	</div>
 
 
 

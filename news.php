@@ -9,10 +9,8 @@ $news = getAllNews();
 
 <html>
 	
-	<div id="main">
-
 		<div id="headerimg"><img src="img/head/5_h.png"></div>
-
+		<div id="main">
 		<h1>nyheter</h1>
 
 		<div id="nyhet">
@@ -76,9 +74,7 @@ foreach($news as $news)
 }
 
 print '</div></div></div>
-	<div class="wrap vit">
-		<div id="main2"></div>
-	</div>
+
 </body></html>';
 
 include('footer.php');

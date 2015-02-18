@@ -11,7 +11,6 @@
 
 
 <div id="main">
-	<div class="arrow-down"></div>
 
 <br>
 	<div id="vision">
@@ -44,9 +43,7 @@
 	<div class="clearfix"></div>
 
 </div>
-	<div class="wrap vit">
-		<div id="main2"></div>
-	</div>
+	
 
 
 
