@@ -470,6 +470,26 @@ div.coltext p {
 	p {
 		font-size: 18px;
 	}
+	
+	div#headermain {
+		width: 100%;
+		max-width: 300px;
+	}
+
+	div#stopmain {
+		width: 100%;
+		max-width: 300px;
+	}
+
+	div.headline {
+		top: 350px;
+	}
+
+
+	div#main {
+		max-width: 100%;
+		width: 100%;
+	}
 
 	.start_col {
 		width: 100%;
@@ -500,12 +520,40 @@ div.coltext p {
 		width: 45%;
 	}
 
+	div#nyhet {
+		width: 100%;
+	}
+
+	div.news_img {
+		width: 100%;
+	}
+
+	div#container {
+		width: 100%;
+	}
+
+	div.item {
+		width: 45%;
+		margin: 0px 10px 0px 10px;
+	}
+
+	div.kontakt2col {
+		width: 100%;
+		margin: 30px 10px;
+	}
+
+	div.kontakt2col img{
+		width: 80%;
+		margin: 30px 20px;
+	}
+
 	.left, .right {
 		display: none !important;
 	}
 
 	#footermain {
-		width:181px;
+		max-width: 181px;
+		width: 200px;
 	}
 
 	#footer {
