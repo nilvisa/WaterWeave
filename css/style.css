@@ -396,7 +396,7 @@ div.coltext p {
 #main2 {
 	max-width: 780px;
 	height: 100px;
-	margin: -2px auto 0px auto;
+	margin: -3px auto 0px auto;
 	padding: 0px;
 	background: #e6e7e8;
 	/*text-align: center;*/
@@ -435,7 +435,7 @@ div.coltext p {
 }
 
 #footer_logga {
-	width: 150px;
+	width: 70px;
 	text-align: center;
 	margin: 15px auto 20px auto;
 }
@@ -785,7 +785,7 @@ div.coltext p {
   bottom: 0;
   width: 50%;
   background-color: inherit;
-  padding-bottom: 3%;
+  padding-bottom: 40px;
   margin: -1px;
 }
 	.pil:before, .pil:after {
