@@ -1,22 +1,23 @@
 .menu-btn div {
     position: absolute;
-    left: 100%;
     top: 64%;
-    padding-right: 8px;
-    margin-top: -0.50em;
+    /*padding-right: 8px;*/
     line-height: 1.2;
     font-size: 18px;
     font-weight: 200;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     z-index: 99;
+    /*margin: -0.50em 10px 0px 0px;*/
+    /*text-align: right;*/
+    color: #666;
 }
  
 .menu-btn span {
     display: block;
     width: 19px;
     height: 3px;
-    margin: 4px 0;
-    background: rgb(0,0,0);
+    margin: 4px 10px;
+    background: #666;
     z-index: 99;
 }
  

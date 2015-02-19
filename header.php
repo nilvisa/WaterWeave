@@ -16,8 +16,6 @@
 
 	<!--Using Media Queries, if the viewport is smaller than 700px use another stylesheet-->
     <link rel="stylesheet" type="text/css" media="all" href="css/hamburger.css"/>
-
-	<link href="css/fonts/">
 </head>
 <body>
 
@@ -32,6 +30,8 @@
 </div>
 
 <div id="stop">
+
+<div id="border"></div>
 
 <!--Hamburger-kod tagen från: https://www.internetkultur.at/simple-hamburger-drop-down-menu-with-css-and-jquery/-->
 <!--Den har hamburger.css och hamburger.js länkad till sig-->
@@ -66,9 +66,7 @@
 			<li><a href="kontakt.php">kontakt</a></li>
 		</ul>
 	</nav>
-	</div>
-
-	<div id="border"></div>	
+	</div>	
 
 </div>	
 

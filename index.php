@@ -54,7 +54,7 @@ include('server/adminprofil.php'); //För att få mail-adressen som formuläret 
 
 		<h2>kontakt</h2>
 
-			<br><br>
+			<br>
 			
 			<h3>adress</h3>
 			<p>Vera Sandbergsallé 8</br>412 96 Göteborg</p>
