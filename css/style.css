@@ -131,7 +131,7 @@ b {
 #logga {
 	width: 140px;
 	float: left;
-	margin: 0px;
+	margin-top: 5px;
 }
 
 #stop {
@@ -141,7 +141,8 @@ b {
 	height: 30px;
 	margin: 0px;
 	text-align: right;
-	/*background: #fff;*/
+	border-bottom: 7px solid #666;
+	padding: 0px;
 	z-index: 1;
 }
 
@@ -153,16 +154,10 @@ b {
 	/*background: #ff0;*/
 }
 
-#border {
-	background: #666666;
-	width: 100%;
-	height: 7px;
-	margin: -3px 0px 0px 0px;
-	padding: 0px;
-}
-
 nav {
-	margin: 4px;
+	position: relative;
+	bottom: -7px;
+	margin: 0px;
 	padding: 0px;
 	float: right;
 	z-index: 1;
@@ -176,6 +171,7 @@ nav ul {
 nav li {
 	display: inline;
 	margin-left: 10px;
+	margin-top: 2px;
 }
 
 nav li a {
@@ -185,17 +181,17 @@ nav li a {
     font-weight: bold;
     font-variant: small-caps;
     font-size: 17px;
+    height:23px;
+    display:inline-block;
 }
 
 nav li a:hover{
-	border-bottom: 7px solid #11a1d8;
-	padding-bottom: 4px;
+	border-bottom: 7px solid #33ccff;
 	z-index: 1;
 }
 
 nav .currentLink{
-	border-bottom: 7px solid #11a1d8;
-	padding-bottom: 4px;
+	border-bottom: 7px solid #33ccff;
 	z-index: 1;
 }
 
@@ -209,24 +205,6 @@ nav .currentLink{
 	/*text-align: center;*/
 }
 
-/*#main h1 {
-	font-family: arial;
-	position: relative;
-	top: -130px;
-display: block;
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-font-weight: 400;
-font-size: 48px;
-letter-spacing: 0px;
-text-transform: none;
-font-size: 68px;
-line-height: 1em;
-text-transform: uppercase;
-letter-spacing: 4px;
-font-weight: 700;
-font-style: normal;
-color: #fff;
-}*/
 
 
 #headerimg {
@@ -443,6 +421,19 @@ div#start_kontakt {
 	clear : both;
 }
 
+.mobil-nav {
+	display: none;
+}
+
+.menu-btn {
+	display: none;
+}
+
+.responsive-menu {
+	display: none;
+}
+
+
 
 /*den responsiva delen*/
 @media only screen and (max-width: 750px) 	{
@@ -463,18 +454,81 @@ div#start_kontakt {
 	}
 
 	div#header {
+		/*height: 60px;*/
 	}
+
 	
 	div#headermain {
 		width: 100%;
+		text-align: center;
+	}
+
+	#logga {
+		float: none;
+		width: 110px;
+		margin: 10px;
+
 	}
 
 	div#stopmain {
 		width: 100%;
 	}
 
+	div#stopmain nav {
+	 	display: none;
+	}
+
+	.mobil-nav {
+	display: block;
+	}
+
+	.menu-btn {
+		display: block;
+		/*float: right;*/
+	}
+
+	.responsive-menu {
+		position: absolute;
+		top: 34px;
+		right: 0px;
+		width: 200px;
+		height: 280px;
+		display: block;
+		overflow: hidden;
+		background: #fff;
+		opacity: 0.8;
+		text-align: left;
+	}
+
+	.responsive-menu ul {
+	list-style : none;
+	text-align: left;
+	margin: 30px 20px 20px -45px;
+	}
+
+	.responsive-menu li {
+		margin: 10px 0px 10px 0px;
+		opacity: 1;
+		text-align: right;
+	}
+
+	.responsive-menu li a {
+		text-decoration : none;
+		color: #666666;
+	    font-family: "Open Sans", sans-serif;
+	    font-weight: bold;
+	    font-variant: small-caps;
+	    font-size: 30px;
+	}
+
+	.responsive-menu li a:hover{
+		border-bottom: 7px solid #33ccff;
+		padding-bottom: 4px;
+		z-index: 1;
+	}
+
 	div.headline {
-		top: 180px;
+		top: 155px;
 	}
 
 	div.headline p{
@@ -488,7 +542,13 @@ div#start_kontakt {
 
 	.start_col {
 		width: 100%;
-		margin: 0px auto 50px auto;
+		margin: 0px auto 70px auto;
+		float: none;
+	}
+
+	div.coltext {
+		height: auto;
+		margin: 0px auto 20px auto;
 	}
 
 	div#start_kontakt {
@@ -501,13 +561,16 @@ div#start_kontakt {
 	}
 
 	div.wwimg img {
-		width: 60%;
+		width: 80%;
+		float: none;
+		padding: 0px;
+		margin: 20px 0px;
 	}
 
-	#waterweave {
+	div.waterweave {
 		width: 100%;
 	}
-	#tekniken {
+	.tekniken {
 		width: 100%;
 	}
 
@@ -530,6 +593,10 @@ div#start_kontakt {
 
 	div.news_img {
 		width: 100%;
+	}
+
+	div.news_img {
+		height: 200px;
 	}
 
 	div#container {
