@@ -31,8 +31,6 @@
 
 <div id="stop">
 
-<div id="border"></div>
-
 <!--Hamburger-kod tagen från: https://www.internetkultur.at/simple-hamburger-drop-down-menu-with-css-and-jquery/-->
 <!--Den har hamburger.css och hamburger.js länkad till sig-->
 <!--Här börjar hamburgar-ikonen-->
