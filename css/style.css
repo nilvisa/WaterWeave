@@ -133,7 +133,7 @@ b {
 #logga {
 	width: 140px;
 	float: left;
-	margin: 0px;
+	margin-top: 5px;
 }
 
 #stop {
@@ -183,17 +183,17 @@ nav li a {
     font-weight: bold;
     font-variant: small-caps;
     font-size: 17px;
+    height:23px;
+    display:inline-block;
 }
 
 nav li a:hover{
 	border-bottom: 7px solid #33ccff;
-	padding-bottom: 4px;
 	z-index: 1;
 }
 
 nav .currentLink{
 	border-bottom: 7px solid #33ccff;
-	padding-bottom: 4px;
 	z-index: 1;
 }
 
